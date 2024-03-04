@@ -1,0 +1,54 @@
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width:100%;
+    margin:2% auto;
+}
+.title {
+    font-family: "Horev";
+    font-size: 8rem;
+  direction:rtl;
+    color: #000000;
+    text-align: center;
+    padding-top:2%
+  
+  }
+  @media only screen and (max-width: 350px) {
+    .row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width:100%;
+        flex-wrap: wrap;
+        margin:2% auto;
+    }
+    .title {
+        font-family: "Horev";
+        font-size: 4rem;
+      direction:rtl;
+        color: #000000;
+        text-align: center;
+        padding-top:2%
+      
+      }
+  }
+  @media only screen   and (min-width: 350px) and (max-width: 450px) {
+    .row{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width:100%;
+        flex-wrap: wrap;
+        margin:2% auto;
+    }
+    .title {
+        font-family: "Horev";
+        font-size: 4.5rem;
+      direction:rtl;
+        color: #000000;
+        text-align: center;
+        padding-top:2%
+      
+      }
+  }

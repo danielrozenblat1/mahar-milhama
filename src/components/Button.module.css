@@ -1,0 +1,42 @@
+button {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    cursor: pointer;
+
+    font-size: 17px;
+    padding: 0.5em 3em ;
+    color: white;
+    font-family: "Heebo";
+    background: linear-gradient(180deg, rgba(147,40,0,1) 0%, rgba(46,17,0,1) 100%);
+    border: none;
+    transition: all ease-out 1s;
+    border-radius: 10px;
+  }
+  button:hover {
+
+border-radius: 20px;
+  }
+  .image{
+    height:44px;
+    width:44px;
+    object-fit: contain;
+    margin-right: 12px;
+
+  
+  }
+  
+  @media only screen and (max-width: 350px) {
+
+    button{
+        margin:5% auto;
+    }
+
+
+  }
+  @media only screen and (min-width: 350px) and (max-width: 1450px) {
+
+    button{
+        margin:5% auto;
+    }
+  }

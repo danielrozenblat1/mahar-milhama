@@ -1,0 +1,46 @@
+.stickyNavbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: none; /* Glass background effect */
+    backdrop-filter: blur(20px); /* Adjust the blur value based on your preference */
+    padding: 0 20px;
+  z-index: 10;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Classy box shadow */
+  }
+
+  .navLogo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left:50px;
+    color: rgb(0, 0, 0); /* Adjust the color of your logo */
+  }
+  .logo{
+width:15vw;
+object-fit: contain;
+  }
+  .navLinks {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navLink {
+    margin-right: 50px;
+    text-decoration: none;
+    color: rgb(0, 0, 0); /* Adjust the color of your navigation links */
+    font-family: "Heebo";
+    cursor: pointer;
+  
+    transition: all ease-out 1s;
+  }
+  .navLink:hover{
+    color: rgb(157, 67, 42);
+    transform: scale(1.1);
+  }

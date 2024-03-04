@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Heebo';
+    src: url('./Heebo-VariableFont_wght.ttf') format('truetype');
+    font-weight:bold;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'HeeboR';
+    src: url('./Heebo-VariableFont_wght.ttf') format('truetype');
+    font-weight:light;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Rubik';
+    src: url('./Rubik-VariableFont_wght.ttf') format('truetype');
+    font-weight:bold;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'RubikR';
+    src: url('./Rubik-VariableFont_wght.ttf') format('truetype');
+    font-weight:light;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Horev';
+    src: url('./Horev CLM Heavy.ttf') format('truetype');
+    font-weight:bold;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'HorevR';
+    src: url('./Horev CLM Heavy.ttf') format('truetype');
+    font-weight:light;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'SuezOne';
+    src: url('./SuezOne-Regular.ttf') format('truetype');
+    font-weight:light;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'SuezOneR';
+    src: url('./SuezOne-Regular.ttf') format('truetype');
+    font-weight:light;
+    font-style: normal;
+  }

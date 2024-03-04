@@ -1,0 +1,118 @@
+.title {
+    font-family: "Horev";
+    font-size: 8rem;
+  direction:rtl;
+    color: #000000;
+    text-align: center;
+
+padding-top:2rem;
+  }
+
+  .row{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    margin:2% auto;
+    justify-content: space-evenly;
+  }
+  .bold{
+    display: inline;
+    color: #9f0000;
+  }
+  .fear{
+    font-family: "Horev";
+    font-size: 4rem;
+    text-align: center;
+    width:80%;
+    margin:3% auto
+  }
+  .go{
+    font-family: "Horev";
+    font-size: 6rem;
+    text-align: center;
+    width:80%;
+    direction: rtl;
+    margin:3% auto
+
+  }
+
+  @media only screen and (max-width: 350px) {
+    .title {
+        font-family: "Horev";
+        font-size:4rem;
+      direction:rtl;
+        color: #000000;
+        text-align: center;
+    
+    padding-top:2rem;
+      }
+      .row{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        margin:2% auto;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+      .bold{
+        display: inline;
+        color: #9f0000;
+      }
+      .fear{
+        font-family: "Horev";
+        font-size: 2.5rem;
+        text-align: center;
+        width:80%;
+        margin:3% auto
+      }
+      .go{
+        font-family: "Horev";
+        font-size: 3.5rem;
+        text-align: center;
+        width:80%;
+        direction: rtl;
+        margin:3% auto
+    
+      }
+
+  }
+  @media only screen and (min-width: 350px) and (max-width: 450px)  {
+    .title {
+        font-family: "Horev";
+        font-size:4.5rem;
+      direction:rtl;
+        color: #000000;
+        text-align: center;
+    
+    padding-top:2rem;
+      }
+      .row{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        margin:2% auto;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+      }
+      .bold{
+        display: inline;
+        color: #9f0000;
+      }
+      .fear{
+        font-family: "Horev";
+        font-size: 2.5rem;
+        text-align: center;
+        width:80%;
+        margin:3% auto
+      }
+      .go{
+        font-family: "Horev";
+        font-size: 3.5rem;
+        text-align: center;
+        width:80%;
+        direction: rtl;
+        margin:3% auto
+    
+      }
+
+  }
