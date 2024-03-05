@@ -1,7 +1,7 @@
 import styles from "./ThirdScreen.module.css"
 import matcal from "../images/סיירת מטכל.png"
-import golani from "../images/סיירת גולני.png"
-import givati from "../images/סיירת גבעתי.png"
+import duvdevan from "../images/דובדבן סיכה.png"
+import sixSixNine from "../images/669 סיכה.png"
 import maglan from "../images/מגלן.png"
 import Box from "../components/Box"
 import Button2 from "../components/Button2"
@@ -13,12 +13,12 @@ return <>
 <div className={styles.title}>הסיכויים לא לטובתך</div>
 
 <div className={styles.row}>
-<Box image={givati} description="רק 5% מבין הנבחנים עוברים את יום הגיבוש לסיירת גבעתי"/>
-<Box image={golani} description="רק 9% מבין הנבחנים עוברים את יום הגיבוש לסיירת גולני"/>
+<Box image={sixSixNine} description="רק 0.5-1% מבין המועמדים עוברים את המיונים ל669 בהצלחה"/>
+<Box image={duvdevan} description="רק 1-2% מבין המועמדים עוברים את המיונים לדובדבן בהצלחה"/>
 </div>
 <div className={styles.row}>
-<Box image={maglan} description="רק 23% מבין הנבחנים עוברים את יום הגיבוש ליחידת מגלן"/>
-<Box  image={matcal} description="רק 12% מבין הנבחנים עוברים את יום הגיבוש לסיירת מטכל"/>
+<Box image={maglan} description="רק 3-5% מבין המועמדים עוברים את המיונים ליחידת מגלן בהצלחה"/>
+<Box  image={matcal} description="רק 1.5-2% מבין המועמדים עוברים את המיונים לסיירת מטכל בהצלחה"/>
 </div>
 <div className={styles.fear}>אם אתה חולם להגיע <div className={styles.bold}>ליחידה מובחרת בצבא </div>ולעשות שירות משמעותי אתה לא יכול לשבת בחיבוק ידיים ו<div className={styles.bold}>לקוות לעבור את הגיבוש</div></div>
 

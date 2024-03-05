@@ -10,7 +10,7 @@ return <div className={styles.container}>
 <div className={styles.title}>מהיום זה אפשרי !</div>
 <div className={styles.subTitle}>הכירו את הסימולציות</div>
 <ImagesGrid/>
-<div className={styles.subTitle}> הסימולציות מדמות לכם אחד לאחד כמו את יום הסיירות עצמו <br/> והן מחולקות ל2 סוגים</div>
+<div className={styles.subTitle}> הסימולציות מדמות לכם אחד לאחד כמו את יום המיון עצמו <br/> והן מחולקות ל2 סוגים</div>
 <Fit/>
 </div>
 

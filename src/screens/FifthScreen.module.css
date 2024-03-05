@@ -7,12 +7,16 @@
 .svg{
     margin-top: -2%;
 }
+
   .bold{
     font-family: "Horev";
 
     text-align: center;
     color: #9f0000;
 display: inline;
+  }
+  .li{
+    margin:0 auto;
   }
   .container{
     margin:5% auto
@@ -67,6 +71,7 @@ display: inline;
     margin:2% auto;
     font-family: "Horev";
     font-size: 2.5rem;
+    text-align: center;
 }
 .subTitle{
     font-family: "Horev";
@@ -135,9 +140,9 @@ display: inline;
     }
     .ul{
         text-align: center;
-        width:90%;
+        width:70%;
         margin:2% auto;
-        text-align: right;
+        text-align: center;
         font-family: "Horev";
         font-size: 2rem;
     }
@@ -168,13 +173,15 @@ display: inline;
         justify-content: center;
         align-items: center;
       }
-      .ul{
+      .ul {
+     
         text-align: center;
-        width:70%;
-        margin:2% auto;
+        width: 70%;
+        margin: 2% auto;
+        justify-content: center;
         font-family: "Horev";
         font-size: 2.5rem;
-    }
+      }
     .subTitle{
         font-family: "Horev";
         font-size: 4rem;
@@ -234,13 +241,7 @@ display: inline;
         margin:8% auto;
         object-fit: cover;
     }
-    .ul{
-        text-align: center;
-        width:70%;
-        margin:2% auto;
-        font-family: "Horev";
-        font-size: 2.5rem;
-    }
+
     .subTitle{
         font-family: "Horev";
         font-size: 4rem;
@@ -302,7 +303,7 @@ display: inline;
         font-size: 5rem;
         direction: rtl;
         width:85%;
-        color:white;
+    
         justify-content: center;
         text-align: center;
         margin:4% auto;
@@ -312,7 +313,7 @@ display: inline;
         font-size: 1.2rem;
         direction: rtl;
         width:90%;
-        color:white;
+     
         justify-content: center;
         text-align: center;
         margin: 5% auto;
@@ -379,7 +380,7 @@ display: inline;
         font-size: 5.5rem;
         direction: rtl;
         width:75%;
-        color:white;
+     
         justify-content: center;
         text-align: center;
         margin:3% auto;
@@ -389,7 +390,7 @@ display: inline;
         font-size: 22px;
         direction: rtl;
         width:80%;
-        color:white;
+ 
         justify-content: center;
         text-align: center;
         margin: 5% auto;
@@ -423,7 +424,7 @@ display: inline;
 
     .sliderContainer {
 
-        width: 30%;
+        width: 35%;
         margin: auto;
     height:auto;
         justify-content: center;
@@ -470,7 +471,7 @@ display: inline;
         font-size: 6rem;
         direction: rtl;
         width:75%;
-        color:white;
+        
         justify-content: center;
         text-align: center;
         margin:2% auto;
@@ -480,7 +481,7 @@ display: inline;
         font-size: 22px;
         direction: rtl;
         width:80%;
-        color:white;
+        
         justify-content: center;
         text-align: center;
         margin: 5% auto;
@@ -547,7 +548,7 @@ display: inline;
         font-size: 6rem;
         direction: rtl;
         width:75%;
-        color:white;
+        
         justify-content: center;
         text-align: center;
         margin:2% auto;
@@ -557,7 +558,7 @@ display: inline;
         font-size: 22px;
         direction: rtl;
         width:80%;
-        color:white;
+        
         justify-content: center;
         text-align: center;
         margin: 5% auto;
@@ -624,7 +625,7 @@ display: inline;
         font-size: 6rem;
         direction: rtl;
         width:75%;
-        color:white;
+        
         justify-content: center;
         text-align: center;
         margin:2% auto;
@@ -634,7 +635,7 @@ display: inline;
         font-size: 22px;
         direction: rtl;
         width:80%;
-        color:white;
+        
         justify-content: center;
         text-align: center;
         margin: 5% auto;
@@ -701,7 +702,7 @@ display: inline;
         font-size: 6.5rem;
         direction: rtl;
         width:75%;
-        color:white;
+        
         justify-content: center;
         text-align: center;
         margin:2% auto;
@@ -711,7 +712,7 @@ display: inline;
         font-size: 22px;
         direction: rtl;
         width:80%;
-        color:white;
+        
         justify-content: center;
         text-align: center;
         margin: 5% auto;
@@ -730,7 +731,7 @@ display: inline;
 
     .sliderContainer {
 
-        width: 20%;
+        width: 70%;
         margin: auto;
         height: auto;
         justify-content: center;
@@ -778,7 +779,7 @@ display: inline;
         font-size: 7rem;
         direction: rtl;
         width:75%;
-        color:white;
+        
         justify-content: center;
         text-align: center;
         margin:1% auto;
@@ -788,7 +789,84 @@ display: inline;
         font-size: 22px;
         direction: rtl;
         width:75%;
-        color:white;
+        
+        justify-content: center;
+        text-align: center;
+        margin: 2% auto;
+        font-family: "HeeboR";
+    }
+    .video{
+    
+        height:600px;
+        width:450px;
+        display: flex;
+        margin:8% auto;
+        object-fit: cover;
+    }
+}
+@media only screen and (min-width: 1250px) and (max-width: 1400px) {
+
+    .sliderContainer {
+
+        width: 65%;
+        margin: auto;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+      }
+      .ul{
+        text-align: center;
+        width:70%;
+        margin:2% auto;
+        font-family: "Horev";
+        font-size: 2.5rem;
+    }
+    .subTitle{
+        font-family: "Horev";
+        font-size: 4rem;
+        text-align: center;
+        width:80%;
+        margin:3% auto;
+        direction: rtl;
+      }
+      .slick-dots {
+        color: var(--slick-dots-color, inherit);
+      }
+      
+      .slick-dots li button {
+        color: var(--slick-dots-color, inherit);
+      }
+      
+      .center{
+        display: flex;
+        width:100%;
+        justify-content: center;
+      }
+      .image{
+        width:80%;
+        height:100%;
+      
+      }
+      .image1{
+        width:100%;
+        height:100%;
+        object-fit: cover;
+      }
+      .title{
+        font-size: 7rem;
+        direction: rtl;
+        width:75%;
+        
+        justify-content: center;
+        text-align: center;
+        margin:1% auto;
+        font-family: "Horev";
+    }
+    .explain{
+        font-size: 22px;
+        direction: rtl;
+        width:75%;
+        
         justify-content: center;
         text-align: center;
         margin: 2% auto;

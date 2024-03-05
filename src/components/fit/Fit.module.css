@@ -23,7 +23,6 @@
         margin:4% auto;
         font-size: 4rem;
         font-family: "Horev";
-    
         text-align: center;
         }
         .side{
@@ -83,10 +82,7 @@
  
             text-align: center;
             }
-            .bold{
-                display: inline;
-                color:rgb(255, 128, 0)
-            }
+    
             .subTitle{
         
                 color:black;
@@ -144,10 +140,7 @@
  
             text-align: center;
             }
-            .bold{
-                display: inline;
-                color:rgb(255, 128, 0)
-            }
+         
             .subTitle{
         
                 color:rgb(255, 179, 146);
@@ -161,7 +154,7 @@
         
                     color:black;
                     margin:4% auto;
-                    font-size: 1rem;
+                    font-size: 1.1rem;
                     font-family: "HeeboR";
                     width:80%;
                     display: flex;
@@ -205,10 +198,7 @@
  width:95%;
             text-align: center;
             }
-            .bold{
-                display: inline;
-                color:rgb(255, 128, 0)
-            }
+   
             .subTitle{
         
                 color:rgb(255, 179, 146);
@@ -222,14 +212,14 @@
         
                     color:black;
                     margin:4% auto;
-                    font-size: 1.1rem;
+                    font-size: 1.2rem;
                     font-family: "HeeboR";
                     width:80%;
                     display: flex;
                     flex-direction:row;
                     align-items: center;
         
-                    text-align: right;
+                    text-align:center;
                     }
                     .left{
                      width:90%;
@@ -266,10 +256,7 @@
             width:95%;
             text-align: center;
             }
-            .bold{
-                display: inline;
-                color:rgb(255, 128, 0)
-            }
+         
             .subTitle{
         
                 color:rgb(255, 179, 146);
@@ -290,7 +277,7 @@
                     flex-direction:row;
                     align-items: center;
         
-                    text-align: right;
+                    text-align: center;
                     }
                     .left{
                      width:80%;
@@ -327,10 +314,7 @@
             width:95%;
             text-align: center;
             }
-            .bold{
-                display: inline;
-                color:rgb(255, 128, 0)
-            }
+     
             .subTitle{
         
                 color:rgb(255, 179, 146);
@@ -351,7 +335,7 @@
                     flex-direction:row;
                     align-items: center;
         
-                    text-align: right;
+                    text-align: center;
                     }
                     .left{
                      width:70%;
@@ -372,55 +356,62 @@
               }
     }
     @media only screen  and (min-width: 850px) and (max-width: 1050px){
-        
         .row{
             display: flex;
-            flex-direction: column;
-  
+            flex-direction: row;
+            justify-content: space-evenly;
         }
         
         .title{
         
             color:black;
-            margin:2% auto;
-            font-size: 6.5rem;
+            margin:4% auto;
+            font-size: 7rem;
             font-family: "Horev";
-            width:95%;
+ 
             text-align: center;
             }
             .bold{
                 display: inline;
-                color:rgb(255, 128, 0)
-            }
+                color: #9f0000;
+              }
             .subTitle{
         
-                color:rgb(255, 179, 146);
+                color:black;
                 margin:4% auto;
-                font-size: 4rem;
+                font-size: 3.5rem;
                 font-family: "Horev";
-       
                 text-align: center;
                 }
+                .side{
+        
+                    color:black;
+                    margin:4% auto;
+                    font-size: 3.5rem;
+                    font-family: "Horev";
+                width:65%;
+                    text-align: center;
+                    }
                 .sentence{
         
                     color:black;
                     margin:4% auto;
-                    font-size: 1.3rem;
+                    font-size: 1.2rem;
                     font-family: "HeeboR";
-                    width:75%;
+                    width:55%;
                     display: flex;
-                    flex-direction:row;
+                    flex-direction: row;
                     align-items: center;
-        
-                    text-align: right;
+                    justify-content: space-evenly;
+                    text-align: center;
+                    direction: rtl;
                     }
+         
                     .left{
-                     width:50%;
-                     margin: 2% auto;
+                        flex:1;
                     }
                     .right{
-                     width:50%;
-                     margin: 2% auto;
+                        flex:1;
                     }
             .checkIcon {
                 color: green; /* Green color for the checkmark */
@@ -431,4 +422,141 @@
                 color: red; /* Red color for the "x" */
                 margin-left: 20px; /* Adjust the spacing as needed */
               }
+      
+    }
+    @media only screen  and (min-width: 1050px) and (max-width: 1250px){
+        .row{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        
+        .title{
+        
+            color:black;
+            margin:4% auto;
+            font-size: 7rem;
+            font-family: "Horev";
+ 
+            text-align: center;
+            }
+            .bold{
+                display: inline;
+                color: #9f0000;
+              }
+            .subTitle{
+        
+                color:black;
+                margin:4% auto;
+                font-size: 3rem;
+                font-family: "Horev";
+                text-align: center;
+                }
+                .side{
+        
+                    color:black;
+                    margin:4% auto;
+                    font-size: 3.5rem;
+                    font-family: "Horev";
+                width:65%;
+                    text-align: center;
+                    }
+                .sentence{
+        
+                    color:black;
+                    margin:4% auto;
+                    font-size: 1.2rem;
+                    font-family: "HeeboR";
+                    width:55%;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    text-align: center;
+                    direction: rtl;
+                    }
+         
+                    .left{
+                        flex:1;
+                    }
+                    .right{
+                        flex:1;
+                    }
+            .checkIcon {
+                color: green; /* Green color for the checkmark */
+                margin-left: 20px; /* Adjust the spacing as needed */
+              }
+              
+              .timesIcon {
+                color: red; /* Red color for the "x" */
+                margin-left: 20px; /* Adjust the spacing as needed */
+              } 
+    }
+    @media only screen  and (min-width: 1250px) and (max-width: 1400px){
+        .row{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        
+        .title{
+        
+            color:black;
+            margin:4% auto;
+            font-size: 7.5rem;
+            font-family: "Horev";
+ 
+            text-align: center;
+            }
+            .bold{
+                display: inline;
+                color: #9f0000;
+              }
+            .subTitle{
+        
+                color:black;
+                margin:4% auto;
+                font-size: 3rem;
+                font-family: "Horev";
+                text-align: center;
+                }
+                .side{
+        
+                    color:black;
+                    margin:4% auto;
+                    font-size: 3.5rem;
+                    font-family: "Horev";
+                width:65%;
+                    text-align: center;
+                    }
+                .sentence{
+        
+                    color:black;
+                    margin:4% auto;
+                    font-size: 1.1rem;
+                    font-family: "HeeboR";
+                    width:60%;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    text-align: center;
+                    direction: rtl;
+                    }
+         
+                    .left{
+                        flex:1;
+                    }
+                    .right{
+                        flex:1;
+                    }
+            .checkIcon {
+                color: green; /* Green color for the checkmark */
+                margin-left: 20px; /* Adjust the spacing as needed */
+              }
+              
+              .timesIcon {
+                color: red; /* Red color for the "x" */
+                margin-left: 20px; /* Adjust the spacing as needed */
+              } 
     }

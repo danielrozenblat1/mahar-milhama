@@ -40,6 +40,7 @@ transition: all ease 0.5s;
         padding:0.7rem 2rem;
         color:white;
         font-family:"HeeboR";
+        margin: 3% auto;
     }
     
     .button:hover{
@@ -64,6 +65,7 @@ transition: all ease 0.5s;
         padding:0.7rem 2.2rem;
         color:white;
         font-family:"HeeboR";
+        margin: 2% auto;
     }
     
     .button:hover{
@@ -88,6 +90,107 @@ transition: all ease 0.5s;
         padding:0.8rem 2.2rem;
         color:white;
         font-family:"HeeboR";
+        margin: 2% auto;
+    }
+    
+    .button:hover{
+    
+    transform: scale(1.1);
+    transition: all ease 0.5s;
+    }
+
+}
+@media only screen  and (min-width: 550px) and (max-width: 850px){
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width:80%;
+        margin: 3% auto;
+    }
+
+    .button{
+        background: linear-gradient(180deg, rgba(147,40,0,1) 0%, rgba(46,17,0,1) 100%);
+        padding:0.8rem 2.2rem;
+        color:white;
+        font-family:"HeeboR";
+        margin: 2% auto;
+    }
+    
+    .button:hover{
+    
+    transform: scale(1.1);
+    transition: all ease 0.5s;
+    }
+
+}
+@media only screen  and (min-width: 850px) and (max-width: 1050px){
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width:80%;
+        margin: 2% auto;
+    }
+
+    .button{
+        background: linear-gradient(180deg, rgba(147,40,0,1) 0%, rgba(46,17,0,1) 100%);
+        padding:0.8rem 2.2rem;
+        color:white;
+        font-family:"HeeboR";
+        margin: 2% auto;
+    }
+    
+    .button:hover{
+    
+    transform: scale(1.1);
+    transition: all ease 0.5s;
+    }
+
+}
+@media only screen  and (min-width: 1050px) and (max-width: 1250px){
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width:80%;
+        margin: 2% auto;
+    }
+
+    .button{
+        background: linear-gradient(180deg, rgba(147,40,0,1) 0%, rgba(46,17,0,1) 100%);
+        padding:0.8rem 2.2rem;
+        color:white;
+        font-family:"HeeboR";
+        margin: 3% auto;
+    }
+    
+    .button:hover{
+    
+    transform: scale(1.1);
+    transition: all ease 0.5s;
+    }
+
+}
+@media only screen  and (min-width: 1250px) and (max-width: 1400px){
+
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width:80%;
+        margin: 2% auto;
+    }
+
+    .button{
+        background: linear-gradient(180deg, rgba(147,40,0,1) 0%, rgba(46,17,0,1) 100%);
+        padding:0.8rem 2.2rem;
+        color:white;
+        font-family:"HeeboR";
+        margin: 1% auto;
     }
     
     .button:hover{

@@ -82,7 +82,7 @@ text-align: center;
     }
     .description{
     font-family: "HeeboR";
-    font-size:0.9rem;
+    font-size:1rem;
     color:rgb(0, 0, 0);
     width:90%;
     margin:0 auto;
@@ -98,8 +98,8 @@ text-align: center;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        height:55vw;
-        width:85vw;
+        height:45vw;
+        width:80vw;
         border-radius: 5%;
     box-shadow: 0 0 9px 3px rgba(90, 0, 0, 0.486);
     margin:3% auto;
@@ -109,14 +109,14 @@ text-align: center;
         justify-content: center;
     }
     .image{
-        height:70px;
+        height:90px;
      margin:0 auto; 
      object-fit: cover;
      justify-content: center;
     }
     .description{
     font-family: "HeeboR";
-    font-size:0.9rem;
+    font-size:1.1rem;
     color:rgb(0, 0, 0);
     width:90%;
     margin:0 auto;
@@ -130,8 +130,8 @@ text-align: center;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        height:55vw;
-        width:85vw;
+        height:35vw;
+        width:55vw;
         border-radius: 5%;
     box-shadow: 0 0 9px 3px rgba(90, 0, 0, 0.486);
     margin:3% auto;
@@ -141,14 +141,14 @@ text-align: center;
         justify-content: center;
     }
     .image{
-        height:70px;
+        height:80px;
      margin:0 auto; 
      object-fit: cover;
      justify-content: center;
     }
     .description{
     font-family: "HeeboR";
-    font-size:0.9rem;
+    font-size:1rem;
     color:rgb(0, 0, 0);
     width:90%;
     margin:0 auto;
@@ -160,8 +160,8 @@ text-align: center;
         display: flex;
         flex-direction: column;
         justify-content: space-evenly;
-        height:55vw;
-        width:85vw;
+        height:30vw;
+        width:45vw;
         border-radius: 5%;
     box-shadow: 0 0 9px 3px rgba(90, 0, 0, 0.486);
     margin:3% auto;
@@ -171,19 +171,77 @@ text-align: center;
         justify-content: center;
     }
     .image{
-        height:70px;
+        height:80px;
      margin:0 auto; 
      object-fit: cover;
      justify-content: center;
     }
     .description{
     font-family: "HeeboR";
-    font-size:0.9rem;
+    font-size:1rem;
     color:rgb(0, 0, 0);
     width:90%;
     margin:0 auto;
     text-align: center;
     }
-
-
+}
+@media only screen and (min-width: 950px) and (max-width: 1150px) {
+    .box{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height:25vw;
+        width:35vw;
+        border-radius: 5%;
+    box-shadow: 0 0 9px 3px rgba(90, 0, 0, 0.486);
+    margin:3% auto;
+    }
+    .icon{
+        display: flex;
+        justify-content: center;
+    }
+    .image{
+        height:80px;
+     margin:0 auto; 
+     object-fit: cover;
+     justify-content: center;
+    }
+    .description{
+    font-family: "HeeboR";
+    font-size:1.1rem;
+    color:rgb(0, 0, 0);
+    width:90%;
+    margin:0 auto;
+    text-align: center;
+    }
+}
+@media only screen and (min-width: 1150px) and (max-width: 1350px) {
+    .box{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height:25vw;
+        width:30vw;
+        border-radius: 5%;
+    box-shadow: 0 0 9px 3px rgba(90, 0, 0, 0.486);
+    margin:3% auto;
+    }
+    .icon{
+        display: flex;
+        justify-content: center;
+    }
+    .image{
+        height:80px;
+     margin:0 auto; 
+     object-fit: cover;
+     justify-content: center;
+    }
+    .description{
+    font-family: "HeeboR";
+    font-size:1.1rem;
+    color:rgb(0, 0, 0);
+    width:90%;
+    margin:0 auto;
+    text-align: center;
+    }
 }
