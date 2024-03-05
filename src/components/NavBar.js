@@ -7,7 +7,7 @@ import Button2 from './Button2';
 const StickyNavbar = () => {
   return <>
        {window.innerWidth < 850 && <div className={styles.smallNav}><Button2 text="לקהילת הלוחמים"/>
-       {window.innerWidth >= 550 && window.innerWidth<=850 && <img className={styles.logo} src={logo}/> }</div>}       
+       {window.innerWidth >= 550 && window.innerWidth<=850 && <img className={styles.logo} src={logo} alt="מחר מלחמה"/> }</div>}       
        {window.innerWidth > 850 &&  <div className={styles.stickyNavbar}>
        <div className={styles.navLogo}><Button/></div>
        <ul className={styles.navLinks}>

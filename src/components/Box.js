@@ -25,7 +25,7 @@ const Box=(props)=>{
     
     return <>
     <div className={styles.box}>
-    <div className={styles.icon}><img className={styles.image} src={props.image}/></div>
+    <div className={styles.icon}><img className={styles.image} src={props.image} alt="מחר מלחמה"/></div>
     <div className={styles.description}>{props.description}</div>
     </div>
     </>

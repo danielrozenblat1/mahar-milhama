@@ -17,23 +17,23 @@ const ImagesGrid=()=>{
     return <>
     <div className={styles.container}>
         <div className={styles.row3}>
-    <img className={styles.image1} src={grid5}/>
-    <img className={styles.image1} src={grid4}/>
-    <img className={styles.image1} src={grid15}/>
+    <img className={styles.image1}  alt="מחר מלחמה שחריה לופט"src={grid5}/>
+    <img className={styles.image1}  alt="מחר מלחמה שחריה לופט"src={grid4}/>
+    <img className={styles.image1}  alt="מחר מלחמה שחריה לופט"src={grid15}/>
     </div>
     <div className={styles.row1}>
-    <img className={styles.image2} src={grid7}/>
-    <img className={styles.image1} src={grid10}/>
-    <img className={styles.image3} src={grid8}/>
-    <img className={styles.image3} src={grid13}/>
+    <img className={styles.image2}  alt="מחר מלחמה שחריה לופט"src={grid7}/>
+    <img className={styles.image1}  alt="מחר מלחמה שחריה לופט"src={grid10}/>
+    <img className={styles.image3}  alt="מחר מלחמה שחריה לופט"src={grid8}/>
+    <img className={styles.image3}  alt="מחר מלחמה שחריה לופט"src={grid13}/>
     </div>
     {/* <div className={styles.row}>
-    <img className={styles.image3} src={image6}/>
+    <img className={styles.image3}  alt="מחר מלחמה שחריה לופט"src={image6}/>
     </div> */}
     <div className={styles.row2}>
-    <img className={styles.image3} src={grid6}/>
-    <img className={styles.image3} src={grid12}/>
-    <img className={styles.image3} src={grid14}/>
+    <img className={styles.image3}  alt="מחר מלחמה שחריה לופט"src={grid6}/>
+    <img className={styles.image3}  alt="מחר מלחמה שחריה לופט"src={grid12}/>
+    <img className={styles.image3}  alt="מחר מלחמה שחריה לופט"src={grid14}/>
     </div>
     
     </div>
