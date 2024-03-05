@@ -6,8 +6,51 @@ import maglan from "../images/מגלן.png"
 import Box from "../components/Box"
 import Button2 from "../components/Button2"
 import Who from "../components/Who"
+import { useEffect } from "react"
+import ScrollReveal from "scrollreveal"
 const ThirdScreen=()=>{
+    useEffect(()=>{
 
+        ScrollReveal().reveal(`.${styles.title}`, {
+            duration: 500,
+            distance: "60px",
+            origin: "top",
+            easing: "ease-out",
+            reset: false,
+            viewFactor: 0.2,
+            interval: 300,
+            delay: 200,
+            scale: 1,
+          });
+          ScrollReveal().reveal(`.${styles.bold}`, {
+            duration: 500,
+            distance: "60px",
+            origin: "top",
+            easing: "ease-in",
+            reset: false,
+            viewFactor: 0.2,
+            interval: 300,
+            delay: 200,
+            beforeReveal: (domEl) => {
+              domEl.style.transform = "scale(1)";
+            },
+            beforeReset: (domEl) => {
+              domEl.style.transform = "scale(0.2)";
+            },
+          });
+          ScrollReveal().reveal(`.${styles.go}`, {
+            duration: 500,
+            distance: "60px",
+            origin: "top",
+            easing: "ease-out",
+            reset: false,
+            viewFactor: 0.2,
+            interval: 300,
+            delay: 200,
+            scale: 1,
+          });
+    },[])
+    
 return <>
 <div className={styles.container} id="הידעת">
 <div className={styles.title}>הסיכויים לא לטובתך</div>

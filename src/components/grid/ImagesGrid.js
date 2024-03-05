@@ -13,8 +13,47 @@ import grid10 from "../../images/grid10.png"
 import grid14 from "../../images/grid14.png"
 import grid12 from "../../images/grid12.png"
 import grid15 from "../../images/grid15.png"
+import { useEffect } from "react"
+import ScrollReveal from "scrollreveal"
 const ImagesGrid=()=>{
+
+    useEffect(()=>{
+        ScrollReveal().reveal(`.${styles.image1}`, {
+            duration: 800,
+            distance: "60px",
+            origin: "top",
+            easing: "ease-out",
+            reset: false,
+            viewFactor: 0.2,
+            interval: 300,
+            delay: 200,
+            scale: 1,
+          });
+          ScrollReveal().reveal(`.${styles.image2}`, {
+            duration:1000,
+            distance: "60px",
+            origin: "top",
+            easing: "ease-out",
+            reset: false,
+            viewFactor: 0.2,
+            interval: 300,
+            delay: 200,
+            scale: 1,
+          });
+          ScrollReveal().reveal(`.${styles.image3}`, {
+            duration:1200,
+            distance: "60px",
+            origin: "top",
+            easing: "ease-out",
+            reset: false,
+            viewFactor: 0.2,
+            interval: 300,
+            delay: 200,
+            scale: 1,
+          });
+    },[])
     return <>
+
     <div className={styles.container}>
         <div className={styles.row3}>
     <img className={styles.image1}  alt="מחר מלחמה שחריה לופט"src={grid5}/>

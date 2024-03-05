@@ -1,7 +1,24 @@
 
+import { useEffect } from "react"
 import styles from "./Group.module.css"
-
+import ScrollReveal from "scrollreveal"
 const Group=(props)=>{
+
+
+useEffect(()=>{
+
+    ScrollReveal().reveal(`.${styles.group}`, {
+        duration: 500,
+        distance: "60px",
+        origin: "top",
+        easing: "ease-out",
+        reset: false,
+        viewFactor: 0.2,
+        interval: 300,
+        delay: 200,
+        scale: 1,
+      });
+},[])
 
 return <>
 <div className={styles.group}>

@@ -3,9 +3,23 @@ import styles from "./TrainerCard.module.css"
 import trainer1 from "../../images/grid2.png"
 import trainer2 from "../../images/grid3.png"
 import trainer3 from "../../images/מאמן שלישי.png"
+import { useEffect } from "react"
+import ScrollReveal from "scrollreveal"
 const TrainerCard=()=>{
 
-
+    useEffect(()=>{
+        ScrollReveal().reveal(`.${styles.title}`, {
+            duration: 500,
+            distance: "60px",
+            origin: "top",
+            easing: "ease-out",
+            reset: false,
+            viewFactor: 0.2,
+            interval: 100,
+            delay: 200,
+            scale: 1,
+          });
+        },[])
     return <>
     
     <div className={styles.title}>אנחנו נהפוך אתכם לאריות</div>

@@ -16,7 +16,48 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import Button2 from "../components/Button2"
+import { useEffect } from "react"
+import ScrollReveal from "scrollreveal"
 const FifthScreen=()=>{
+
+    useEffect(()=>{
+        ScrollReveal().reveal(`.${styles.title}`, {
+            duration: 500,
+            distance: "60px",
+            origin: "top",
+            easing: "ease-out",
+            reset: false,
+            viewFactor: 0.2,
+            interval: 300,
+            delay: 200,
+            scale: 1,
+          });
+          ScrollReveal().reveal(`.${styles.explain}`, {
+            duration: 500,
+            distance: "60px",
+            origin: "bottom",
+            easing: "ease-out",
+            reset: false,
+            viewFactor: 0.2,
+            interval: 300,
+            delay: 200,
+            scale: 1,
+          });
+          ScrollReveal().reveal(`.${styles.bold}`, {
+            duration: 500,
+            distance: "60px",
+            origin: "top",
+            easing: "ease-out",
+            reset: false,
+            viewFactor: 0.2,
+            interval: 300,
+            delay: 200,
+            scale: 1,
+          });
+  
+  
+
+    },[])
     const sliderSettings = {
         dots: true,
         infinite: true,

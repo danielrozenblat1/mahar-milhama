@@ -6,6 +6,7 @@ import { Player } from "@lordicon/react"
 import helmet from "../icons/wired-lineal-1446-spartan-helmet (2).json"
 import Button2 from "../components/Button2"
 import Button from "../components/Button"
+import ScrollReveal from "scrollreveal"
 const SecondScreen=()=>{
 
     const handleComplete=()=>{
@@ -18,7 +19,21 @@ const SecondScreen=()=>{
     useEffect(()=>{
         playerRef1?.current?.playFromBeginning()
     
+        ScrollReveal().reveal(`.${styles.groups}`, {
+            duration: 500,
+            distance: "60px",
+            origin: "top",
+            easing: "ease-out",
+            reset: false,
+            viewFactor: 0.2,
+            interval: 300,
+            delay: 200,
+            scale: 1,
+          });
+    
     },[])
+
+ 
 
 
 return <>

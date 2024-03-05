@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react"
 import snipe from "../icons/wired-lineal-134-target.json"
 import { Player } from "@lordicon/react"
 import Box from "../components/Box"
+import ScrollReveal from "scrollreveal"
 import { Link as ScrollLink } from "react-scroll"
 import TimeLoader from "../components/loader/TimeLoader"
 const FirstScreen = () => {
@@ -36,8 +37,9 @@ const FirstScreen = () => {
         },50)
       };
 
+
     }, []); // Empty dependency array to run only once on component mount
-  
+
     return (
       <>
       
