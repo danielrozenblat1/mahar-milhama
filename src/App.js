@@ -10,19 +10,25 @@ import SixthScreen from './screens/SixthScreen';
 import TrainerCard from './components/trainers/TrainerCard';
 import BasicAccordion from './components/questions/Akordion';
 import ByMe from './components/ByMe/ByMe';
+import VerticalLinearStepper from './components/steps/Steps';
+import StepsScreen from './components/steps/StepsScreen';
 
 function App() {
   return <>
   <FirstScreen/>
   <ThirdScreen/>
   <ForthScreen/>
-  {/* <CustomImageList/> */}
-  <SecondScreen/>
-<FifthScreen/>
-<SixthScreen/>
+  
 <TrainerCard/>
+  {/* <CustomImageList/> */}
+ 
+  <FifthScreen/>
+  <SixthScreen/>
+
+  <SecondScreen/>
 <BasicAccordion/>
-<ByMe/>
+
+  <ByMe/>
   </>
 }
 

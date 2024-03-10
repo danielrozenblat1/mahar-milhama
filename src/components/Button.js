@@ -2,9 +2,21 @@
 import  styles from "./Button.module.css"
 import { Link as ScrollLink } from "react-scroll"
 import logo from "../images/לוגו.png"
-const Button=()=>{
+const Button=(props)=>{
+  const message = props.msg || null;
+
+  const phoneNumber = "+972527960293";
+  const encodedMessage = encodeURIComponent(message);
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+  const handleClick = () => {
+    // Open the WhatsApp link when the button is clicked
+    if(props.msg)
+    window.location.href = whatsappUrl;
+  };
+
 return <>
-    <button>
+    <button onClick={handleClick}>
   {/* <svg
     height="24"
     width="24"
@@ -19,7 +31,7 @@ return <>
   </svg> */}
   {/* <img className={styles.image} height={18} width={18} src={logo}/> */}
   
-  <ScrollLink to="צור קשר" smooth={true} duration={1500} offset={-100} ><span>לקהילת הלוחמים</span></ScrollLink>
+ <span>לעוד פרטים</span>
 </button>
 
     

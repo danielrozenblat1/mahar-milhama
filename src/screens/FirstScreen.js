@@ -8,6 +8,7 @@ import Box from "../components/Box"
 import ScrollReveal from "scrollreveal"
 import { Link as ScrollLink } from "react-scroll"
 import TimeLoader from "../components/loader/TimeLoader"
+import TargetLoader from "../components/loader/TargetLoader"
 const FirstScreen = () => {
     const [isLoading, setIsLoading] = useState(true); // Image loading state
     const playerRef1=useRef(null)
@@ -46,7 +47,7 @@ const FirstScreen = () => {
   
         <div >
           {/* Display the loading component while the image is loading */}
-          {isLoading && <TimeLoader />}
+          {isLoading && <TargetLoader />}
   
           {/* Only display the content (including the image) after loading */}
           {!isLoading && (
@@ -72,7 +73,7 @@ const FirstScreen = () => {
                   </div> </ScrollLink>
                
                 <h2 className={styles.subTitle}>
-                  מפעל ייצור <div className={styles.bold}>ללוחמים</div>
+                  הכנה מקצועית לצבא
                 </h2>
               </div>
             </>

@@ -14,6 +14,17 @@
     padding-top:2%
   
   }
+  .container{
+    margin:5% auto
+  }
+  .sliderContainer {
+
+    width:65%;
+    margin:3% auto;
+ 
+    justify-content: center;
+    align-items: center;
+  }
   @media only screen and (max-width: 350px) {
     .row{
         display: flex;
@@ -22,6 +33,15 @@
         width:100%;
         flex-wrap: wrap;
         margin:2% auto;
+    }
+    .sliderContainer {
+
+      width: 80%;
+      height:auto;
+      margin: 5% auto;
+      
+      justify-content: center;
+      align-items: center;
     }
     .title {
         font-family: "Horev";
@@ -42,6 +62,14 @@
         flex-wrap: wrap;
         margin:2% auto;
     }
+    .sliderContainer {
+
+      width: 70%;
+      margin:3% auto;
+  height:auto;
+      justify-content: center;
+      align-items: center;
+    }
     .title {
         font-family: "Horev";
         font-size: 4.5rem;
@@ -60,6 +88,14 @@
         width:100%;
         flex-wrap: wrap;
         margin:2% auto;
+    }
+    .sliderContainer {
+
+      width: 60%;
+      margin:3% auto;
+  height:auto;
+      justify-content: center;
+      align-items: center;
     }
     .title {
         font-family: "Horev";
@@ -89,6 +125,14 @@
         padding-top:2%
       
       }
+      .sliderContainer {
+
+        width: 70%;
+        margin:3% auto;
+    height:auto;
+        justify-content: center;
+        align-items: center;
+      }
   }
   @media only screen   and (min-width: 750px) and (max-width: 950px) {
     .row{
@@ -98,6 +142,14 @@
         width:100%;
         flex-wrap: wrap;
         margin:2% auto;
+    }
+    .sliderContainer {
+
+      width: 85%;
+      margin:3% auto;
+  height:auto;
+      justify-content: center;
+      align-items: center;
     }
     .title {
         font-family: "Horev";
@@ -117,6 +169,14 @@
         width:100%;
         flex-wrap: wrap;
         margin:2% auto;
+    }
+    .sliderContainer {
+
+      width: 75%;
+      margin:3% auto;
+  height:auto;
+      justify-content: center;
+      align-items: center;
     }
     .title {
         font-family: "Horev";

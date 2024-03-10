@@ -4,6 +4,7 @@ import sheharya from "../images/שחריה לופט.png"
 import Who from "../components/Who"
 const ForthScreen=()=>{
     return <>
+
     <div className={styles.container}>
     {/* <div className={styles.title}>מי אני</div> */}
 

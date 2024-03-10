@@ -7,12 +7,19 @@
 
 padding-top:2rem;
   }
+  .sliderContainer {
 
+    width:85%;
+    margin:3% auto;
+ height:auto;
+    justify-content: center;
+    align-items: center;
+  }
   .row{
     display: flex;
     width: 100%;
     flex-direction: row;
-    margin:2% auto;
+    margin:3% auto;
     justify-content: space-evenly;
   }
   .bold{
@@ -46,6 +53,14 @@ padding-top:2rem;
     
     padding-top:2rem;
       }
+      .sliderContainer {
+
+        width:90%;
+        margin:3% auto;
+     height: auto;
+        justify-content: center;
+        align-items: center;
+      }
       .row{
         display: flex;
         width: 100%;
@@ -63,7 +78,7 @@ padding-top:2rem;
         font-size: 2.5rem;
         text-align: center;
         width:80%;
-        margin:3% auto
+        margin:5% auto
       }
       .go{
         font-family: "Horev";
@@ -86,6 +101,14 @@ padding-top:2rem;
     
     padding-top:2rem;
       }
+      .sliderContainer {
+
+        width:85%;
+        margin:3% auto;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+      }
       .row{
         display: flex;
         width: 100%;
@@ -103,7 +126,7 @@ padding-top:2rem;
         font-size: 2.5rem;
         text-align: center;
         width:80%;
-        margin:3% auto
+        margin:5% auto
       }
       .go{
         font-family: "Horev";
@@ -125,6 +148,14 @@ padding-top:2rem;
     
     padding-top:2rem;
       }
+      .sliderContainer {
+
+        width:80%;
+        margin:3% auto;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+      }
       .row{
         display: flex;
         width: 100%;
@@ -142,7 +173,7 @@ padding-top:2rem;
         font-size: 3rem;
         text-align: center;
         width:80%;
-        margin:3% auto
+        margin:5% auto
       }
       .go{
         font-family: "Horev";
@@ -162,6 +193,14 @@ padding-top:2rem;
         color: #000000;
         text-align: center;
         padding-top:2rem;
+      }
+      .sliderContainer {
+
+        width:75%;
+        margin:3% auto;
+        height: auto;
+        justify-content: center;
+        align-items: center;
       }
       .row{
         display: flex;
@@ -201,6 +240,14 @@ padding-top:2rem;
         text-align: center;
         padding-top:2rem;
       }
+      .sliderContainer {
+
+        width:75%;
+        margin:3% auto;
+        height: auto;
+        justify-content: center;
+        align-items: center;
+      }
       .row{
         display: flex;
         width: 100%;
@@ -237,6 +284,14 @@ padding-top:2rem;
         color: #000000;
         text-align: center;
         padding-top:2rem;
+      }
+      .sliderContainer {
+
+        width:70%;
+        margin:3% auto;
+        height: auto;
+        justify-content: center;
+        align-items: center;
       }
       .row{
         display: flex;

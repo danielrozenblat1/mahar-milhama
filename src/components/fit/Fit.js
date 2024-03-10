@@ -37,29 +37,27 @@ useEffect(()=>{
     
     
     <div className={styles.left}>
-    <div className={styles.side} id="שמאל">סימולציות לגיבושים</div>
+    <div className={styles.side} id="שמאל">גיבושים</div>
     
     <div className={styles.sentence} id="שמאל">
-  24 שעות שכוללות 
+    24 שעות בהובלת מגבשים של יחידות העילית שכוללות
+
                 {/* <FontAwesomeIcon icon={faTimes} className={styles.timesIcon} /> */}
               </div>
     <div className={styles.sentence} id="שמאל">
-    בוחן כושר אשר יחלק אתכם לצוותים  
+    אקטים מהגיבוש, מסעות, הקפצות, משימות חשיבה ודינמיקה קבוצתית שיקחו אתכם לקצה הפיזי והמנטלי ויגרמו לגיבוש להראות הרבה יותר פשוט לאחר מכן
                 {/* <FontAwesomeIcon icon={faTimes} className={styles.timesIcon} /> */}
               </div>
     
               <div className={styles.sentence} id="שמאל">
-              אקטים מהגיבוש
+              סיכום אישי אחד על אחד עם המגבשים ומשוב אישי פרטני + תרגול ראיון אישי
                 {/* <FontAwesomeIcon icon={faTimes} className={styles.timesIcon} /> */}
               </div>
               <div className={styles.sentence} id="שמאל">
-              תרגול ראיון אישי עם המגבשים
+              סיכום קבוצתי עם המגבשים הכולל דגשים לשיפור ושימור והסבר על מה בדיוק אותן יחידות מחפשות בגיבוש
                 {/* <FontAwesomeIcon icon={faTimes} className={styles.timesIcon} /> */}
               </div>
-              <div className={styles.sentence} id="שמאל">
-              סיכום ודירוג ביצועים פרטני עם דגשים לשימור/שיפור
-                {/* <FontAwesomeIcon icon={faTimes} className={styles.timesIcon} /> */}
-              </div>
+        
     </div>
     
     
@@ -68,33 +66,37 @@ useEffect(()=>{
     
     
     <div className={styles.sentence} id="ימין">
-            4 שעות הכוללות
+    4 שעות בהובלת מגבשים יוצאי יחידות מובחרות הכוללות
                 {/* <FontAwesomeIcon icon={faCheck} className={styles.checkIcon} /> */}
               </div>
     
               <div className={styles.sentence} id="ימין">
-              בוחן כושר אשר יחלק אתכם לצוותים 
+              בוחן כושר אשר יחלק אתכם לצוותים
                 {/* <FontAwesomeIcon icon={faCheck} className={styles.checkIcon} /> */}
               </div>
     
               <div className={styles.sentence} id="ימין">
-              אחד לאחד אקטים מהיום סיירות
+              אקטים אחד לאחד כמו ביום סיירות
                 {/* <FontAwesomeIcon icon={faCheck} className={styles.checkIcon} /> */}
               </div>
               <div className={styles.sentence} id="ימין">
-              תקבלו טיפים חשובים ודגשים ליום הסיירות 
+              כל משתתף מקבל אצלנו לאחר הסימולציה משוב ביצועים פרטני על הביצועים שלו באקטים
                 {/* <FontAwesomeIcon icon={faCheck} className={styles.checkIcon} /> */}
               </div>
-              <div className={styles.sentence} id="ימין">
-              משוב ביצועים פרטני
-                {/* <FontAwesomeIcon icon={faCheck} className={styles.checkIcon} /> */}
-              </div>
+              {/* <div className={styles.sentence} id="ימין">
+              בחלק של התיאור של הסימולציות
+             
+              </div> */}
     
     </div>
 
     </div>
-   <Button2 text="צרף אותי לקבוצת הלוחמים"/>
+   <Button2 text="לעוד פרטים על הסימולציות" msg="היי שחריה , אשמח לדעת עוד על הסימולציות"/>
     
     </>
 }
 export default Fit
+{/* <div className={styles.sentence} id="שמאל">
+סיכום ודירוג ביצועים פרטני עם דגשים לשימור/שיפור
+
+</div> */}

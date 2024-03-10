@@ -1,11 +1,9 @@
 .title {
     font-family: "Horev";
-    font-size: 9rem;
+    font-size: 4rem;
   direction:rtl;
     color: #000000;
     text-align: center;
- 
-
   }
   .container{
     background: linear-gradient(90deg, rgba(64,0,0,0.6470237753304446) 0%, rgba(209,212,215,0.6470237753304446) 50%, rgba(64,0,0,0.6498248957786239) 100%);
@@ -15,6 +13,14 @@
     box-shadow: 0 0 5px 5px rgb(83, 83, 83);
   }
   @media only screen and (min-width: 850px) and (max-width: 1400px) {
+
+    .title {
+      font-family: "Horev";
+      font-size: 6rem;
+    direction:rtl;
+      color: #000000;
+      text-align: center;
+    }
 
     .container{
         background: linear-gradient(90deg, rgba(64,0,0,0.6470237753304446) 0%, rgba(209,212,215,0.6470237753304446) 50%, rgba(64,0,0,0.6498248957786239) 100%);

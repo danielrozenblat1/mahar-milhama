@@ -134,8 +134,8 @@ const FifthScreen=()=>{
  
       ];
 return <>
-<svg xmlns="http://www.w3.org/2000/svg" className={styles.svg} viewBox="0 0 1440 320"><path fill="" fill-opacity="1" d="M0,128L80,122.7C160,117,320,107,480,138.7C640,171,800,245,960,266.7C1120,288,1280,256,1360,240L1440,224L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path></svg>
-<div className={styles.container}>
+
+<div className={styles.container} id="מתאמנים ממליצים">
 
      <div className={styles.title}>עדויות מהשטח</div>
      <div className={styles.explain}>ההשפעה של האימונים בקבוצה שלנו על החוזק הפיזי והמנטלי באה לידי ביטוי אצל כל מתאמן ומתאמן שדובק בתהליך ! הנה חלק קטן מהמתאמנים שלנו</div>
@@ -161,7 +161,7 @@ return <>
   <div className={styles.title}><div className={styles.bold}>כל</div> המתאמנים שלנו</div>
   <div className={styles.subTitle}>נמצאים בקהילת הלוחמים , שבה הם  <br/> <ul className={styles.ul}><li>מקבלים תשובה לכל שאלה שלהם</li> <br/><li>נמצאים בסביבה מנצחת ומעודדת להצלחה</li> <br/> <li>רוכשים את המידע הכי עדכני על ימי הגיבוש הרלוונטים עבורם</li></ul></div>
   <div className={styles.subTitle}>והכניסה אליה היא לגמרי <div className={styles.bold}>בחינם</div></div>
-  <Button2 text="צרף אותי לקבוצה"/>
+  <Button2 text="לפורום הארצי של עילית/קומנדו/סיירות" href={true}/>
 </div>
 
 </>

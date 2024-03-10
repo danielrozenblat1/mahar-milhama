@@ -18,6 +18,7 @@
     padding:1rem 3rem;
     color:white;
     font-family:"HeeboR";
+direction: rtl;
 }
 
 .button:hover{

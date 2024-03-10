@@ -20,10 +20,12 @@
     direction: rtl;
   }
   .container{
-background: #f5f3f3;
+/* background: #f5f3f3; */
 width:100%;
   }
-
+.svg{
+  margin-top:-2%;
+}
   @media only screen and (max-width: 350px) {
 
     .title {
@@ -48,7 +50,7 @@ width:100%;
         direction: rtl;
       }
       .container{
-    background: #f5f3f3;
+    /* background: #f5f3f3; */
     width:100%;
       }
     
@@ -78,7 +80,7 @@ width:100%;
         direction: rtl;
       }
       .container{
-    background: #f5f3f3;
+    /* background: #f5f3f3; */
     width:100%;
       }
   }
@@ -106,7 +108,7 @@ width:100%;
         direction: rtl;
       }
       .container{
-    background: #f5f3f3;
+    /* background: #f5f3f3; */
     width:100%;
       }
   }
@@ -134,7 +136,7 @@ width:100%;
         direction: rtl;
       }
       .container{
-    background: #f5f3f3;
+    /* background: #f5f3f3; */
     width:100%;
       }
   }
@@ -162,7 +164,7 @@ width:100%;
         direction: rtl;
       }
       .container{
-    background: #f5f3f3;
+    /* background: #f5f3f3; */
     width:100%;
       }
   }
@@ -190,7 +192,7 @@ width:100%;
         direction: rtl;
       }
       .container{
-    background: #f5f3f3;
+    /* background: #f5f3f3; */
     width:100%;
       }
   }
@@ -218,7 +220,7 @@ width:100%;
         direction: rtl;
       }
       .container{
-    background: #f5f3f3;
+    /* background: #f5f3f3; */
     width:100%;
       }
   }

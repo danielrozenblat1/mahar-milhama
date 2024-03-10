@@ -3,12 +3,245 @@ import matcal from "../images/סיירת מטכל.png"
 import duvdevan from "../images/דובדבן סיכה.png"
 import sixSixNine from "../images/669 סיכה.png"
 import maglan from "../images/מגלן.png"
+import shayetet from "../images/שייטת.png"
+import egoz from "../images/אגוז.png"
+import shaldag from "../images/שלדג.png"
 import Box from "../components/Box"
 import Button2 from "../components/Button2"
 import Who from "../components/Who"
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import ScrollReveal from "scrollreveal"
+import StepsScreen from "../components/steps/StepsScreen"
+import Slider from "react-slick"
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
+
 const ThirdScreen=()=>{
+
+
+const yehidot=[{id:"669",steps:[
+  {
+    label: 'תנאים',
+    description: `פרופיל - 97 , דפר - 50`,
+  },
+  {
+    label: "שלב ראשון",
+    description:
+      'מעבר יום סיירות בתוצאת גיבוש מטכל או שייטת',
+  },
+  {
+    label: 'שלב שני',
+    description: `מעבר גיבוש מטכל או שייטת בתוצאת 669`,
+  },
+  {
+    label: 'שלב שלישי',
+    description: `יום בריכה`,
+  },
+  {
+    label: 'שלב רביעי',
+    description: `פסיכולוג וסיווג בטחוני`,
+  },
+]},{id:"שלדג",steps:[
+
+  {
+    label: 'תנאים',
+    description: `פרופיל - 97 , דפר - 50`,
+  },
+  {
+    label: "שלב ראשון",
+    description:
+      'מעבר יום סיירות בתוצאת גיבוש מטכל',
+  },
+  {
+    label: 'שלב שני',
+    description: `מעבר גיבוש מטכל בתוצאת שלדג`,
+  },
+  {
+    label: 'שלב שלישי',
+    description: `פסיכולוג וסיווג בטחוני`,
+  },
+
+
+
+
+]},
+
+{id:"מגלן",steps:[
+
+  {
+    label: 'תנאים',
+    description: `פרופיל - 82, דפר - 50`,
+  },
+  {
+    label: "שלב ראשון",
+    description:(
+      <>
+         דרך א' מעבר יום סיירות בתוצאת גיבוש מטכל או שייטת   <br />
+        דרך ב' מעבר גיבוש צנחנים
+      </>
+    ),
+  },
+  {
+    label: 'שלב שני',
+    description:(
+      <>
+דרך א' מעבר גיבוש מטכל או שייטת בהצלחה בתוצאת קומנדו וקבלה ליחידה   <br />
+דרך ב' גיוס לצנחנים ויציאה לגיבוש יחטיות בתחילת הטירונות ומעבר שלו בהצלחה בתוצאת מגלן
+      </>
+    ),
+  },
+  {
+    label: 'דרך שלישית',
+    description: `גיוס לחטיבת חיר ויציאה לגיבוש יחטיות בתחילת הטירונות ומעבר שלו בהצלחה בתוצאת מגלן`,
+  },
+  {
+    label: 'דרך רביעית',
+    description: `נפילה ממסלול של יחידת עילית`,
+  },
+
+
+]},
+{id:"דובדבן",steps:[
+
+  {
+    label: 'תנאים',
+    description: `פרופיל - 82, דפר - 50`,
+  },
+  {
+    label: "שלב ראשון",
+    description:(
+      <>
+דרך א' מעבר יום סיירות בתוצאת גיבוש מטכל או שייטת   <br />
+דרך ב' מעבר גיבוש צנחנים
+      </>
+    ),
+  },
+  {
+    label: 'שלב שני',
+    description:(
+      <>
+דרך א' מעבר גיבוש מטכל או שייטת בהצלחה בתוצאת קומנדו וקבלה ליחידה   <br />
+דרך ב' גיוס לצנחנים ויציאה לגיבוש יחטיות בתחילת הטירונות ומעבר שלו בהצלחה בתוצאת דובדבן
+      </>
+    ),
+  },
+  {
+    label: 'דרך שלישית',
+    description: `גיוס לחטיבת חיר ויציאה לגיבוש יחטיות בתחילת הטירונות ומעבר שלו בהצלחה בתוצאת דובדבן`,
+  },
+  {
+    label: 'דרך רביעית',
+    description: `נפילה ממסלול של יחידת עילית`,
+  },
+]},
+{id:"אגוז",steps:[
+
+  {
+    label: 'תנאים',
+    description: `פרופיל - 82, דפר - 50`,
+  },
+  {
+    label: "שלב ראשון",
+    description:
+      'מעבר יום סיירות בתוצאת גיבוש מטכל או שייטת',
+  },
+  {
+    label: 'שלב שני',
+    description: `מעבר גיבוש מטכל או שייטת בהצלחה בתוצאת קומנדו וקבלה ליחידה`,
+  },
+  {
+    label: 'דרך שנייה',
+    description: `גיוס לחטיבת חיר ויציאה לגיבוש יחטיות בתחילת הטירונות ומעבר שלו בהצלחה בתוצאת אגוז`,
+  },
+  {
+    label: 'דרך שלישית',
+    description: `נפילה ממסלול של יחידת עילית`,
+  },
+
+]},
+{id:"שייטת 13",steps:[
+
+  {
+    label: 'תנאים',
+    description: `פרופיל - 97 , דפר - 50`,
+  },
+  {
+    label: "שלב ראשון",
+    description:(
+      <>
+        13 דרך א' מעבר גדנע צלילה בכיתה יא
+        <br />
+        דרך ב' מעבר יום סיירות בתוצאת שייטת
+      </>
+    ),
+  },
+  {
+    label: 'שלב שני',
+    description: `בדיקות רפואיות ומבחן פסיכוטכני`,
+  },
+  {
+    label: 'שלב שלישי',
+    description: `מעבר גיבוש שייטת`,
+  },
+  {
+    label: 'שלב רביעי',
+    description: `פסיכולוג וסיווג בטחוני`,
+  },
+]},
+
+
+{id:"סיירת מטכל", title:"סיירת מטכל" ,steps:[
+
+  {
+    label: 'תנאים',
+    description: `פרופיל - 97 , דפר - 50`,
+  },
+  {
+    label: "שלב ראשון",
+    description:
+      'מעבר יום סיירות בתוצאת גיבוש מטכל',
+  },
+  {
+    label: 'שלב שני',
+    description: `מעבר גיבוש מטכל`,
+  },
+  {
+    label: 'שלב שלישי',
+    description: `פסיכולוג וסיווג בטחוני`,
+  },
+
+]}]
+
+
+ 
+
+const [pressed,setPressed]=useState(false)
+const [chosen,setChosen]=useState()
+const [title,setTitle]=useState('')
+const handleClick=(e)=>{
+
+  if(yehidot){
+
+      const clickedId = e.target.id;
+     setTitle(clickedId)
+    console.log(clickedId)
+      // Find the matching item in the yehidot array
+      const selectedYehida = yehidot.find((yehida) => yehida.id === clickedId);
+    
+      // Check if a matching item is found
+      if (selectedYehida) {
+        // Update state and pass the steps array to StepsScreen
+        setChosen(selectedYehida.steps);
+      }
+      setPressed((prevState) => !prevState);
+
+    };
+
+}
+
+
+
     useEffect(()=>{
 
         ScrollReveal().reveal(`.${styles.title}`, {
@@ -50,26 +283,71 @@ const ThirdScreen=()=>{
             scale: 1,
           });
     },[])
-    
-return <>
-<div className={styles.container} id="הידעת">
-<div className={styles.title}>הסיכויים לא לטובתך</div>
+    const sliderSettings = {
+ arrows:true,
+ dots:true,
+      infinite: true,
+      speed: 500,
+      slidesToShow: 2,
+      slidesToScroll: 2,
+      responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+      ],
+    };
 
+return <>
+{window.innerWidth >1000 && <div className={styles.container} id="הידעת">
+<div className={styles.title}>הסיכויים לא לטובתך</div>
+  {pressed && <StepsScreen title={title} steps={chosen} onClick={handleClick}/>}
 <div className={styles.row}>
-<Box image={sixSixNine} description="רק 0.5-1% מבין המועמדים עוברים את המיונים ל669 בהצלחה"/>
-<Box image={duvdevan} description="רק 1-2% מבין המועמדים עוברים את המיונים לדובדבן בהצלחה"/>
+  
+<Box id="669"  image={sixSixNine} description="רק 0.5-1% מבין המועמדים עוברים את המיונים ל669 בהצלחה" onClick={handleClick}/>
+
+<Box id="דובדבן" image={duvdevan} description="רק 1-2% מבין המועמדים עוברים את המיונים לדובדבן בהצלחה" onClick={handleClick}/>
 </div>
 <div className={styles.row}>
-<Box image={maglan} description="רק 3-5% מבין המועמדים עוברים את המיונים ליחידת מגלן בהצלחה"/>
-<Box  image={matcal} description="רק 1.5-2% מבין המועמדים עוברים את המיונים לסיירת מטכל בהצלחה"/>
+<Box id="מגלן" image={maglan} description="רק 3-5% מבין המועמדים עוברים את המיונים ליחידת מגלן בהצלחה" onClick={handleClick}/>
+<Box id="סיירת מטכל" image={matcal} description="רק 1.5-2% מבין המועמדים עוברים את המיונים לסיירת מטכל בהצלחה" onClick={handleClick}/>
 </div>
+<div className={styles.row}>
+<Box id="שלדג" image={shaldag} description="רק 0.5-1% מבין המועמדים עוברים את המיונים לשלדג בהצלחה" onClick={handleClick}/>
+<Box id="אגוז" image={egoz} description="רק 1-1.5% מבין המועמדים עוברים את המיונים לאגוז בהצלחה" onClick={handleClick}/>
+</div> 
+ <div className={styles.row}>
+
+<Box id="שייטת 13" image={shayetet} description="רק 0.2-0.5% מבין המועמדים עוברים את המיונים לשייטת 13 בהצלחה" onClick={handleClick}/>
+</div>
+
 <div className={styles.fear}>אם אתה חולם להגיע <div className={styles.bold}>ליחידה מובחרת בצבא </div>ולעשות שירות משמעותי אתה לא יכול לשבת בחיבוק ידיים ו<div className={styles.bold}>לקוות לעבור את הגיבוש</div></div>
 
-<div className={styles.go}>הצעד הראשון מתחיל עכשיו ! </div>
-<Button2 text="לקבוצת הווצאפ שלנו"/>
+<div className={styles.go}>לעשות את הצעד הראשון</div>
+<Button2 text="איך אני מגדיל את הסיכויים ?" msg="היי שחריה , אפשר לדעת עוד על "/>
 
 {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#990f02" fill-opacity="1" d="M0,288L48,261.3C96,235,192,181,288,176C384,171,480,213,576,202.7C672,192,768,128,864,133.3C960,139,1056,213,1152,250.7C1248,288,1344,288,1392,288L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg> */}
-</div>
+</div>}
+{window.innerWidth<1000 &&
+      <div className={styles.container} id="הידעת">
+      <div className={styles.title}>הסיכויים לא לטובתך</div>
+      {pressed && <StepsScreen title={title} steps={chosen} onClick={handleClick} />}
+      <Slider {...sliderSettings}>
+        <Box id="669" image={sixSixNine} description="רק 0.5-1% מבין המועמדים עוברים את המיונים ל669 בהצלחה" onClick={handleClick} />
+        <Box id="דובדבן" image={duvdevan} description="רק 1-2% מבין המועמדים עוברים את המיונים לדובדבן בהצלחה" onClick={handleClick} />
+        <Box id="מגלן" image={maglan} description="רק 3-5% מבין המועמדים עוברים את המיונים ליחידת מגלן בהצלחה" onClick={handleClick} />
+        <Box id="סיירת מטכל" image={matcal} description="רק 1.5-2% מבין המועמדים עוברים את המיונים לסיירת מטכל בהצלחה" onClick={handleClick} />
+        <Box id="שלדג" image={shaldag} description="רק 0.5-1% מבין המועמדים עוברים את המיונים לשלדג בהצלחה" onClick={handleClick} />
+        <Box id="אגוז" image={egoz} description="רק 1-1.5% מבין המועמדים עוברים את המיונים לאגוז בהצלחה" onClick={handleClick} />
+        <Box id="שייטת 13" image={shayetet} description="רק 0.2-0.5% מבין המועמדים עוברים את המיונים לשייטת 13 בהצלחה" onClick={handleClick} />
+      </Slider>
+      <div className={styles.fear}>אם אתה חולם להגיע <div className={styles.bold}>ליחידה מובחרת בצבא </div>ולעשות שירות משמעותי אתה לא יכול לשבת בחיבוק ידיים ו<div className={styles.bold}>לקוות לעבור את הגיבוש</div></div>
+      <div className={styles.go}>לעשות את הצעד הראשון</div>
+      <Button2 text="איך אני מגדיל את הסיכויים ?" msg="היי שחריה , אפשר לדעת עוד על " />
+    </div>}
 </>
 
 }
