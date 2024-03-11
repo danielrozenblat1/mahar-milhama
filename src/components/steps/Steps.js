@@ -32,7 +32,7 @@ export default function VerticalLinearStepper(props) {
     <Box sx={{ maxWidth: "80dvw" }} dir="rtl">
          
       <Stepper activeStep={activeStep} orientation="vertical">
-        {props.steps.map((step, index) => (
+        {props.steps?.map((step, index) => (
           <Step key={step.label} textAlign="right">
             <StepLabel sx={{textAlign:"right"}}
               StepIconProps={{
@@ -52,7 +52,7 @@ export default function VerticalLinearStepper(props) {
                     onClick={handleNext}
                     sx={{ mt: 1, mr: 1,fontFamily:"Heebo"}}
                   >
-                    {index === props.steps.length - 1 ? 'סיום' : 'המשך'}
+                    {index === props.steps?.length - 1 ? 'סיום' : 'המשך'}
                   </Button>
                   <Button
                     disabled={index === 0}
@@ -68,7 +68,7 @@ export default function VerticalLinearStepper(props) {
           </Step>
         ))}
       </Stepper>
-      {activeStep === props.steps.length && (
+      {activeStep === props.steps?.length && (
         <Paper square elevation={0} sx={{ p: 3 }}>
           <Typography sx={{fontFamily:"HeeboR" ,fontSize:"1rem"}}>כל השלבים הושלמו - סיימת</Typography>
           <Button onClick={handleReset} sx={{ mt: 1, mr: 1,fontFamily:"Heebo" }} variant="contained">

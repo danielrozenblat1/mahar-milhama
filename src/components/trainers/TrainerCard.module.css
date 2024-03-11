@@ -74,6 +74,8 @@
         font-family: "Horev";
         font-size: 4.5rem;
       direction:rtl;
+      width:85%;
+    margin:0 auto;
         color: #000000;
         text-align: center;
         padding-top:2%

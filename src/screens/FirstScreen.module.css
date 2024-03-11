@@ -4,6 +4,8 @@
   background-image: url("../images/background1.png");
   background-size: cover;
   background-position: center;
+  overflow-x: hidden;
+
   }
   
   .title {
@@ -39,6 +41,7 @@
       background-size: cover;
       background-position: center top;
       background-repeat: no-repeat;
+      overflow-x: hidden;
       }
       
       .title {
@@ -76,6 +79,7 @@
       background-size: cover;
       background-position: center top;
       background-repeat: no-repeat;
+      overflow-x: hidden;
       }
       
       .title {
@@ -112,6 +116,7 @@
       background-size: cover;
       background-position: center top;
       background-repeat: no-repeat;
+      overflow-x: hidden;
       }
       
       .title {
@@ -148,6 +153,7 @@
       background-size: cover;
       background-position: center top;
       background-repeat: no-repeat;
+      overflow-x: hidden;
       }
       
       .title {
@@ -184,6 +190,7 @@
       background-size: cover;
       background-position: center top;
       background-repeat: no-repeat;
+      overflow-x: hidden;
       }
       
       .title {
@@ -220,6 +227,7 @@
       background-size: cover;
       background-position: center top;
       background-repeat: no-repeat;
+      overflow-x: hidden;
       }
       
       .title {
@@ -256,6 +264,7 @@
       background-size: cover;
       background-position: center top;
       background-repeat: no-repeat;
+      overflow-x: hidden;
       }
       
       .title {
@@ -292,6 +301,7 @@
       background-size: cover;
       background-position: center top;
       background-repeat: no-repeat;
+      overflow-x: hidden;
       }
       
       .title {

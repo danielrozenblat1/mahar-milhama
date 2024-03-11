@@ -63,14 +63,9 @@ const FirstScreen = () => {
                 </div>
                 {/* ... your other content here ... */}
            
-                <ScrollLink
-                  to="הידעת"
-                  smooth={true}
-                  duration={1500}
-                  offset={-100}
-                >     <div className={styles.icon}>
+                <div className={styles.icon}>
                <Player ref={playerRef1} size="100%" onComplete={handleComplete} icon={snipe} />
-                  </div> </ScrollLink>
+                  </div> 
                
                 <h2 className={styles.subTitle}>
                   הכנה מקצועית לצבא

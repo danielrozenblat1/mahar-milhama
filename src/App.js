@@ -12,10 +12,12 @@ import BasicAccordion from './components/questions/Akordion';
 import ByMe from './components/ByMe/ByMe';
 import VerticalLinearStepper from './components/steps/Steps';
 import StepsScreen from './components/steps/StepsScreen';
+import SocialIcons from './components/social/Social';
 
 function App() {
   return <>
-  <FirstScreen/>
+<div  style={{overflow:"hidden" ,width:"100dvw"}}> 
+ <FirstScreen/>
   <ThirdScreen/>
   <ForthScreen/>
   
@@ -27,8 +29,9 @@ function App() {
 
   <SecondScreen/>
 <BasicAccordion/>
-
+<SocialIcons/>
   <ByMe/>
+  </div>
   </>
 }
 

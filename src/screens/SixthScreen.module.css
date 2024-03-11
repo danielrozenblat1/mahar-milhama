@@ -7,6 +7,16 @@
 
 
   }
+.image{
+  width:25%;
+  object-fit: contain;
+
+}
+.center{
+  display: flex;
+  justify-content: center;
+  margin:3% auto;
+}
   .bold{
     display: inline;
     color: #9f0000;
@@ -36,6 +46,11 @@ width:100%;
         text-align: center;
     
     
+      }
+      .image{
+        width:75%;
+        object-fit: contain;
+      
       }
       .bold{
         display: inline;
@@ -67,6 +82,11 @@ width:100%;
     
     
       }
+      .image{
+        width:65%;
+        object-fit: contain;
+      
+      }
       .bold{
         display: inline;
         color: #9f0000;
@@ -94,6 +114,11 @@ width:100%;
         text-align: center;
     
     
+      }
+      .image{
+        width:55%;
+        object-fit: contain;
+      
       }
       .bold{
         display: inline;
@@ -123,6 +148,11 @@ width:100%;
     
     
       }
+      .image{
+        width:45%;
+        object-fit: contain;
+      
+      }
       .bold{
         display: inline;
         color: #9f0000;
@@ -151,6 +181,11 @@ width:100%;
     
     
       }
+      .image{
+        width:40%;
+        object-fit: contain;
+      
+      }
       .bold{
         display: inline;
         color: #9f0000;
@@ -178,6 +213,11 @@ width:100%;
         text-align: center;
     
     
+      }
+      .image{
+        width:35%;
+        object-fit: contain;
+      
       }
       .bold{
         display: inline;
@@ -210,6 +250,11 @@ width:100%;
       .bold{
         display: inline;
         color: #9f0000;
+      }
+      .image{
+        width:30%;
+        object-fit: contain;
+      
       }
       .subTitle{
         font-family: "Horev";

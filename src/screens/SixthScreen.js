@@ -4,6 +4,7 @@ import ImagesGrid from "../components/grid/ImagesGrid"
 import styles from "./SixthScreen.module.css"
 import ScrollReveal from "scrollreveal"
 import NewImagesGrid from "../components/grid/NewImageGrid"
+import simulation from "../images/מחר מלחמה סימולציות.png"
 const SixthScreen=()=>{
     useEffect(()=>{
         ScrollReveal().reveal(`.${styles.subTitle}`, {
@@ -29,8 +30,10 @@ return <div className={styles.container} id="הסימולציות">
 <div className={styles.subTitle}>דמיין להגיע לגיבוש / יום סיירות ולדעת בעל פה <div className={styles.bold}>כל אקט ואקט </div></div>
 <div className={styles.title} id="אפשרי">מהיום זה אפשרי !</div>
 <div className={styles.subTitle}>הכירו את הסימולציות</div>
+
 {/* <ImagesGrid/> */}
 <NewImagesGrid/>
+<div className={styles.center}><img className={styles.image} src={simulation} alt="שחריה לופט סימולציות מחר מלחמה"/></div>
 <div className={styles.subTitle}> הסימולציות מדמות לכם אחד לאחד כמו את יום המיון עצמו <br/> והן מחולקות ל2 סוגים</div>
 <Fit/>
 </div>

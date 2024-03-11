@@ -2,6 +2,6 @@
 
 body{
     overflow-x: hidden;
-
-    margin:0
+    min-zoom: 1;
+   
 }

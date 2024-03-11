@@ -2,7 +2,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100dvw;
     height: 10vh;
     display: flex;
     justify-content: space-between;
@@ -12,6 +12,7 @@
     padding: 0 20px;
   z-index: 10;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Classy box shadow */
+    overflow-x: hidden;
   }
 
   .navLogo {

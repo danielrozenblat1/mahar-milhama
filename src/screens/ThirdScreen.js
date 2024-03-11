@@ -304,7 +304,7 @@ const handleClick=(e)=>{
 return <>
 {window.innerWidth >1000 && <div className={styles.container} id="הידעת">
 <div className={styles.title}>הסיכויים לא לטובתך</div>
-  {pressed && <StepsScreen title={title} steps={chosen} onClick={handleClick}/>}
+  <StepsScreen title={title} pressed={pressed} steps={chosen} onClick={handleClick}/>
 <div className={styles.row}>
   
 <Box id="669"  image={sixSixNine} description="רק 0.5-1% מבין המועמדים עוברים את המיונים ל669 בהצלחה" onClick={handleClick}/>
@@ -334,15 +334,15 @@ return <>
 {window.innerWidth<1000 &&
       <div className={styles.container} id="הידעת">
       <div className={styles.title}>הסיכויים לא לטובתך</div>
-      {pressed && <StepsScreen title={title} steps={chosen} onClick={handleClick} />}
+     <StepsScreen   pressed={pressed} title={title} steps={chosen} onClick={handleClick} />
       <Slider {...sliderSettings}>
-        <Box id="669" image={sixSixNine} description="רק 0.5-1% מבין המועמדים עוברים את המיונים ל669 בהצלחה" onClick={handleClick} />
-        <Box id="דובדבן" image={duvdevan} description="רק 1-2% מבין המועמדים עוברים את המיונים לדובדבן בהצלחה" onClick={handleClick} />
-        <Box id="מגלן" image={maglan} description="רק 3-5% מבין המועמדים עוברים את המיונים ליחידת מגלן בהצלחה" onClick={handleClick} />
-        <Box id="סיירת מטכל" image={matcal} description="רק 1.5-2% מבין המועמדים עוברים את המיונים לסיירת מטכל בהצלחה" onClick={handleClick} />
-        <Box id="שלדג" image={shaldag} description="רק 0.5-1% מבין המועמדים עוברים את המיונים לשלדג בהצלחה" onClick={handleClick} />
-        <Box id="אגוז" image={egoz} description="רק 1-1.5% מבין המועמדים עוברים את המיונים לאגוז בהצלחה" onClick={handleClick} />
-        <Box id="שייטת 13" image={shayetet} description="רק 0.2-0.5% מבין המועמדים עוברים את המיונים לשייטת 13 בהצלחה" onClick={handleClick} />
+        <Box id="669" image={sixSixNine} description="רק 1-1.5% מבין המועמדים עוברים את המיונים ל669 בהצלחה" onClick={handleClick} />
+        <Box id="דובדבן" image={duvdevan} description="רק 2-3% מבין המועמדים עוברים את המיונים לדובדבן בהצלחה" onClick={handleClick} />
+        <Box id="מגלן" image={maglan} description="רק 2-3% מבין המועמדים עוברים את המיונים ליחידת מגלן בהצלחה" onClick={handleClick} />
+        <Box id="סיירת מטכל" image={matcal} description="רק 0.5-1% מבין המועמדים עוברים את המיונים לסיירת מטכל בהצלחה" onClick={handleClick} />
+        <Box id="שלדג" image={shaldag} description="רק 1-1.5% מבין המועמדים עוברים את המיונים לשלדג בהצלחה" onClick={handleClick} />
+        <Box id="אגוז" image={egoz} description="רק 2-3% מבין המועמדים עוברים את המיונים לאגוז בהצלחה" onClick={handleClick} />
+        <Box id="שייטת 13" image={shayetet} description="רק 0.5-1% מבין המועמדים עוברים את המיונים לשייטת 13 בהצלחה" onClick={handleClick} />
       </Slider>
       <div className={styles.fear}>אם אתה חולם להגיע <div className={styles.bold}>ליחידה מובחרת בצבא </div>ולעשות שירות משמעותי אתה לא יכול לשבת בחיבוק ידיים ו<div className={styles.bold}>לקוות לעבור את הגיבוש</div></div>
       <div className={styles.go}>לעשות את הצעד הראשון</div>
