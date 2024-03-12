@@ -16,7 +16,7 @@ padding-top:2rem;
   .description{
 
     font-family: "HeeboR";
-    margin-top:1%;
+    
   }
   .sliderContainer {
 
@@ -25,6 +25,7 @@ padding-top:2rem;
  height:auto;
     justify-content: center;
     align-items: center;
+    padding: 5%;;
   }
  
   .prev,

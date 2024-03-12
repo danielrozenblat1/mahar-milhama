@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: space-evenly;
     height:25vw;
-    width:25vw;
+    width:35vw;
 box-shadow: 0 0 9px 3px rgba(90, 0, 0, 0.486);
 
 }
@@ -226,6 +226,38 @@ text-align: center;
         border-radius: 5%;
     box-shadow: 0 0 9px 3px rgba(90, 0, 0, 0.486);
     margin:3% auto;
+    }
+
+    .icon{
+        display: flex;
+        justify-content: center;
+    }
+    .image{
+        height:80px;
+     margin:0 auto; 
+     object-fit: cover;
+     justify-content: center;
+    }
+    .description{
+    font-family: "HeeboR";
+    font-size:1.1rem;
+    color:rgb(0, 0, 0);
+    width:90%;
+    margin:0 auto;
+    text-align: center;
+    }
+}
+@media only screen and (min-width: 1350px) and (max-width: 1650px) {
+    .box{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height:25vw;
+        width:30vw;
+        border-radius: 5%;
+    box-shadow: 0 0 9px 3px rgba(90, 0, 0, 0.486);
+    margin:3% auto;
+   
     }
 
     .icon{
