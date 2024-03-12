@@ -290,6 +290,7 @@ const handleClick=(e)=>{
       dots: true,
       infinite: true,
       speed: 500,
+  
       slidesToShow: 1, // Adjust this value to control the number of visible slides
       centerMode: true, // Enable center mode
       centerPadding: '20%', // Adjust the padding to control the amount of the next and previous slides visible
@@ -309,7 +310,7 @@ const handleClick=(e)=>{
     };
 
 return <>
-{window.innerWidth >1000 && <div className={styles.container} id="הידעת">
+{/* <div className={styles.container} id="הידעת">
 <div className={styles.title}>הסיכויים לא לטובתך</div>
   <StepsScreen title={title} pressed={pressed} steps={chosen} onClick={handleClick}/>
 <div className={styles.row}>
@@ -337,8 +338,8 @@ return <>
 <Button2 text="איך אני מגדיל את הסיכויים ?" msg="היי שחריה , אפשר לדעת עוד על "/>
 
 
-</div>}
-{window.innerWidth<1000 &&
+</div> */}
+
       <div className={styles.container} id="הידעת">
       <div className={styles.title}>הסיכויים לא לטובתך</div>
      {/* <StepsScreen   pressed={pressed} title={title} steps={chosen} onClick={handleClick} /> */}
@@ -471,7 +472,7 @@ return <>
       <div className={styles.fear}>אם אתה חולם להגיע <div className={styles.bold}>ליחידה מובחרת בצבא </div>ולעשות שירות משמעותי אתה לא יכול לשבת בחיבוק ידיים ו<div className={styles.bold}>לקוות לעבור את הגיבוש</div></div>
       <div className={styles.go}>לעשות את הצעד הראשון</div>
       <Button2 text="איך אני מגדיל את הסיכויים ?" msg="היי שחריה , אפשר לדעת עוד על " />
-    </div>}
+    </div>
 </>
 
 }

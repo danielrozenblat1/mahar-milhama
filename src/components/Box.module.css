@@ -5,7 +5,7 @@
     height:25vw;
     width:35vw;
 box-shadow: 0 0 9px 3px rgba(90, 0, 0, 0.486);
-
+margin:2% auto;
 }
 
 .icon{
@@ -85,7 +85,7 @@ text-align: center;
     font-family: "HeeboR";
     font-size:1rem;
     color:rgb(0, 0, 0);
-    width:90%;
+    width:85%;
     margin:0 auto;
     text-align: center;
     }

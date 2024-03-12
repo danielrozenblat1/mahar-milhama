@@ -74,7 +74,7 @@
 
     .background {
   
-   height:100dvh;
+   height:90dvh;
      background-image: url("../images/backgroundPhone1.png");
       background-size: cover;
       background-position: center top;
@@ -88,7 +88,7 @@
       direction:rtl;
         color: #000000;
         text-align: center;
-        padding-top: 5rem;
+        padding-top: 5.3rem;
       }
       .bold{
         display: inline;
@@ -111,7 +111,7 @@
 
     .background {
   
-     height:100dvh;
+     height:100vh;
      background-image: url("../images/backgroundbiggerPhones.png");
      background-size: cover;
       background-position: center top;
@@ -148,7 +148,7 @@
 
     .background {
   
-     height:100dvh;
+     height:100vh;
      background-image: url("../images/backgroundTablets.png");
       background-size: cover;
       background-position: center top;
@@ -185,7 +185,7 @@
 
     .background {
   
-     height:100dvh;
+     height:100vh;
       background-image: url("../images/backgroundTablets.png");
       background-size: cover;
       background-position: center top;
@@ -222,7 +222,7 @@
 
     .background {
   
-     height:100dvh;
+     height:100vh;
       background-image: url("../images/backgroundComputers.png");
       background-size: cover;
       background-position: center top;

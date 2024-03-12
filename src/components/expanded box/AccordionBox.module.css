@@ -14,7 +14,7 @@
 }
 .akordion{
     width: 50%;
-     margin:0 auto;
+     margin:2% auto;
      padding-bottom: 3%;
 }
 @media only screen and (max-width: 350px) {
@@ -44,6 +44,7 @@
         padding-top:5%;
         font-family: "Horev";
     }
+
 }
 @media only screen and (min-width: 450px) and (max-width: 550px) {
 
