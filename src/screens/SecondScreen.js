@@ -43,7 +43,7 @@ return <>
     <div className={styles.groups}>הצוותים שלנו</div>
     <div className={styles.icon}><Player ref={playerRef1} size="100%" onComplete={handleComplete}icon={helmet}/></div>
     <div className={styles.row}>
-<Group city="חיפה" day1="שני" hour1="18:00" day2="רביעי" hour2="19:30"/>
+<Group city="חיפה" day1="ראשון" hour1="18:00" day2="רביעי" hour2="19:30"/>
 <Group city="אריאל" day1="ראשון" hour1="17:00" day2="חמישי" hour2="18:30"/>
 </div>
 <div className={styles.row}>
