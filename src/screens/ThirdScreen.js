@@ -12,10 +12,13 @@ import Who from "../components/Who"
 import { useEffect, useState } from "react"
 import ScrollReveal from "scrollreveal"
 import StepsScreen from "../components/steps/StepsScreen"
-import Slider from "react-slick"
+import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons';
+import { DropdownAccordion } from "../components/expanded box/AccordionBox"
+import BoxPlus from "../components/expanded box/BoxPlus"
 
 const ThirdScreen=()=>{
 
@@ -284,18 +287,22 @@ const handleClick=(e)=>{
           });
     },[])
     const sliderSettings = {
- arrows:true,
- dots:true,
+      dots: true,
       infinite: true,
       speed: 500,
-      slidesToShow: 2,
-      slidesToScroll: 2,
+      slidesToShow: 1, // Adjust this value to control the number of visible slides
+      centerMode: true, // Enable center mode
+      centerPadding: '20%', // Adjust the padding to control the amount of the next and previous slides visible
       responsive: [
         {
-          breakpoint: 768,
+          breakpoint: 760,
           settings: {
+         
+            centerMode: true, // Enable center mode
+            centerPadding: '10%',
             slidesToShow: 1,
             slidesToScroll: 1,
+           
           },
         },
       ],
@@ -306,7 +313,7 @@ return <>
 <div className={styles.title}>הסיכויים לא לטובתך</div>
   <StepsScreen title={title} pressed={pressed} steps={chosen} onClick={handleClick}/>
 <div className={styles.row}>
-  
+
 <Box id="669"  image={sixSixNine} description="רק 0.5-1% מבין המועמדים עוברים את המיונים ל669 בהצלחה" onClick={handleClick}/>
 
 <Box id="דובדבן" image={duvdevan} description="רק 1-2% מבין המועמדים עוברים את המיונים לדובדבן בהצלחה" onClick={handleClick}/>
@@ -334,15 +341,132 @@ return <>
 {window.innerWidth<1000 &&
       <div className={styles.container} id="הידעת">
       <div className={styles.title}>הסיכויים לא לטובתך</div>
-     <StepsScreen   pressed={pressed} title={title} steps={chosen} onClick={handleClick} />
-      <Slider {...sliderSettings}>
-        <Box id="669" image={sixSixNine} description="רק 1-1.5% מבין המועמדים עוברים את המיונים ל669 בהצלחה" onClick={handleClick} />
-        <Box id="דובדבן" image={duvdevan} description="רק 2-3% מבין המועמדים עוברים את המיונים לדובדבן בהצלחה" onClick={handleClick} />
-        <Box id="מגלן" image={maglan} description="רק 2-3% מבין המועמדים עוברים את המיונים ליחידת מגלן בהצלחה" onClick={handleClick} />
-        <Box id="סיירת מטכל" image={matcal} description="רק 0.5-1% מבין המועמדים עוברים את המיונים לסיירת מטכל בהצלחה" onClick={handleClick} />
-        <Box id="שלדג" image={shaldag} description="רק 1-1.5% מבין המועמדים עוברים את המיונים לשלדג בהצלחה" onClick={handleClick} />
-        <Box id="אגוז" image={egoz} description="רק 2-3% מבין המועמדים עוברים את המיונים לאגוז בהצלחה" onClick={handleClick} />
-        <Box id="שייטת 13" image={shayetet} description="רק 0.5-1% מבין המועמדים עוברים את המיונים לשייטת 13 בהצלחה" onClick={handleClick} />
+     {/* <StepsScreen   pressed={pressed} title={title} steps={chosen} onClick={handleClick} /> */}
+      <Slider {...sliderSettings} style={{zIndex:1}}>
+      <DropdownAccordion title={<>
+        <BoxPlus id="669"  image={sixSixNine} description="רק 0.5-1% מבין המועמדים עוברים את המיונים ל669 בהצלחה" />
+      </>} content={ <>
+      <div className={styles.label}>תנאים</div>
+      <div className={styles.description}>פרופיל - 97 , דפר - 50</div>
+
+      <div className={styles.label}>שלב ראשון</div>
+      <div className={styles.description}>מעבר יום סיירות בתוצאת גיבוש מטכל או שייטת</div>
+      
+      <div className={styles.label}>שלב שני</div>
+      <div className={styles.description}>מעבר גיבוש מטכל או שייטת בתוצאת 669</div>
+      
+      <div className={styles.label}>שלב שלישי</div>
+      <div className={styles.description}>יום בריכה</div>
+
+      <div className={styles.label}>שלב רביעי</div>
+      <div className={styles.description}>פסיכולוג וסיווג בטחוני</div>
+      </>} />
+        {/* <Box id="669" image={sixSixNine} description="רק 1-1.5% מבין המועמדים עוברים את המיונים ל669 בהצלחה" onClick={handleClick} /> */}
+        <DropdownAccordion title={<> <BoxPlus id="דובדבן" image={duvdevan} description="רק 2-3% מבין המועמדים עוברים את המיונים לדובדבן בהצלחה"/> </>} content={ <>
+      <div className={styles.label}>תנאים</div>
+      <div className={styles.description}>פרופיל - 82, דפר - 50</div>
+
+      <div className={styles.label}>שלב ראשון</div>
+      <div className={styles.description}>דרך א' מעבר יום סיירות בתוצאת גיבוש מטכל או שייטת   <br />
+דרך ב' מעבר גיבוש צנחנים</div>
+      
+      <div className={styles.label}>שלב שני</div>
+      <div className={styles.description}>דרך א' מעבר גיבוש מטכל או שייטת בהצלחה בתוצאת קומנדו וקבלה ליחידה   <br />
+דרך ב' גיוס לצנחנים ויציאה לגיבוש יחטיות בתחילת הטירונות ומעבר שלו בהצלחה בתוצאת דובדבן</div>
+      
+      <div className={styles.label}>דרך שלישית</div>
+      <div className={styles.description}>גיוס לחטיבת חיר ויציאה לגיבוש יחטיות בתחילת הטירונות ומעבר שלו בהצלחה בתוצאת דובדבן</div>
+
+      <div className={styles.label}>דרך רביעית</div>
+      <div className={styles.description}>נפילה ממסלול של יחידת עילית</div>
+      </>}/>
+
+      
+        <DropdownAccordion title={<> <BoxPlus id="מגלן" image={maglan} description="רק 2-3% מבין המועמדים עוברים את המיונים ליחידת מגלן בהצלחה"/></>} content={ <>
+      <div className={styles.label}>תנאים</div>
+      <div className={styles.description}>פרופיל - 82, דפר - 50</div>
+
+      <div className={styles.label}>שלב ראשון</div>
+      <div className={styles.description}>         דרך א' מעבר יום סיירות בתוצאת גיבוש מטכל או שייטת   <br />
+        דרך ב' מעבר גיבוש צנחנים</div>
+      
+      <div className={styles.label}>שלב שני</div>
+      <div className={styles.description}>דרך א' מעבר גיבוש מטכל או שייטת בהצלחה בתוצאת קומנדו וקבלה ליחידה   <br />
+דרך ב' גיוס לצנחנים ויציאה לגיבוש יחטיות בתחילת הטירונות ומעבר שלו בהצלחה בתוצאת מגלן</div>
+      
+      <div className={styles.label}>דרך שלישית</div>
+      <div className={styles.description}>גיוס לחטיבת חיר ויציאה לגיבוש יחטיות בתחילת הטירונות ומעבר שלו בהצלחה בתוצאת מגלן</div>
+
+      <div className={styles.label}>דרך רביעית</div>
+      <div className={styles.description}>נפילה ממסלול של יחידת עילית</div>
+      </>}/>
+
+
+
+
+
+        <DropdownAccordion title={<> <BoxPlus id="סיירת מטכל" image={matcal} description="רק 0.5-1% מבין המועמדים עוברים את המיונים לסיירת מטכל בהצלחה"/></>} content={ <>
+      <div className={styles.label}>תנאים</div>
+      <div className={styles.description}>פרופיל - 97 , דפר - 50</div>
+
+      <div className={styles.label}>שלב ראשון</div>
+      <div className={styles.description}>מעבר יום סיירות בתוצאת גיבוש מטכל</div>
+      
+      <div className={styles.label}>שלב שני</div>
+      <div className={styles.description}>מעבר גיבוש מטכל</div>
+      
+      <div className={styles.label}>דרך שלישית</div>
+      <div className={styles.description}>פסיכולוג וסיווג בטחוני</div>
+      </>}/>
+       <DropdownAccordion title={<>   <BoxPlus id="שלדג" image={shaldag} description="רק 1-1.5% מבין המועמדים עוברים את המיונים לשלדג בהצלחה"/></>}  content={<><div className={styles.label}>תנאים</div>
+      <div className={styles.description}>פרופיל - 97 , דפר - 50</div>
+
+      <div className={styles.label}>שלב ראשון</div>
+      <div className={styles.description}>מעבר יום סיירות בתוצאת גיבוש מטכל</div>
+      
+      <div className={styles.label}>שלב שני</div>
+      <div className={styles.description}>מעבר גיבוש מטכל בתוצאת שלדג</div>
+      
+      <div className={styles.label}>דרך שלישית</div>
+      <div className={styles.description}>פסיכולוג וסיווג בטחוני</div>
+
+      </>} />
+       <DropdownAccordion title={<>   <BoxPlus id="אגוז" image={egoz} description="רק 2-3% מבין המועמדים עוברים את המיונים לאגוז בהצלחה" /></>} content={ <>
+      <div className={styles.label}>תנאים</div>
+      <div className={styles.description}>פרופיל - 82, דפר - 50</div>
+
+      <div className={styles.label}>שלב ראשון</div>
+      <div className={styles.description}>מעבר יום סיירות בתוצאת גיבוש מטכל או שייטת</div>
+      
+      <div className={styles.label}>שלב שני</div>
+      <div className={styles.description}>מעבר גיבוש מטכל או שייטת בהצלחה בתוצאת קומנדו וקבלה ליחידה</div>
+      
+      <div className={styles.label}>דרך שנייה</div>
+      <div className={styles.description}>גיוס לחטיבת חיר ויציאה לגיבוש יחטיות בתחילת הטירונות ומעבר שלו בהצלחה בתוצאת אגוז</div>
+
+      <div className={styles.label}>דרך שלישית</div>
+      <div className={styles.description}>נפילה ממסלול של יחידת עילית</div>
+      </>} />
+       <DropdownAccordion title={<><BoxPlus id="שייטת 13" image={shayetet} description="רק 0.5-1% מבין המועמדים עוברים את המיונים לשייטת 13 בהצלחה"/></>}   content={ <>
+      <div className={styles.label}>תנאים</div>
+      <div className={styles.description}>פרופיל - 97 , דפר - 50</div>
+
+      <div className={styles.label}>שלב ראשון</div>
+      <div className={styles.description}>        13 דרך א' מעבר גדנע צלילה בכיתה יא
+        <br />
+        דרך ב' מעבר יום סיירות בתוצאת שייטת</div>
+      
+      <div className={styles.label}>שלב שני</div>
+      <div className={styles.description}>בדיקות רפואיות ומבחן פסיכוטכני</div>
+      
+      <div className={styles.label}>שלב שלישי</div>
+      <div className={styles.description}>מעבר גיבוש שייטת</div>
+
+      <div className={styles.label}>שלב רביעי</div>
+      <div className={styles.description}>פסיכולוג וסיווג בטחוני</div>
+      </>} />
+
+
       </Slider>
       <div className={styles.fear}>אם אתה חולם להגיע <div className={styles.bold}>ליחידה מובחרת בצבא </div>ולעשות שירות משמעותי אתה לא יכול לשבת בחיבוק ידיים ו<div className={styles.bold}>לקוות לעבור את הגיבוש</div></div>
       <div className={styles.go}>לעשות את הצעד הראשון</div>

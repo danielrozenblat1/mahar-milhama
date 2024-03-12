@@ -7,6 +7,17 @@
 
 padding-top:2rem;
   }
+  .label{
+
+    font-family: "Heebo";
+    margin-top:1%
+
+  }
+  .description{
+
+    font-family: "HeeboR";
+    margin-top:1%;
+  }
   .sliderContainer {
 
     width:85%;
@@ -15,7 +26,13 @@ padding-top:2rem;
     justify-content: center;
     align-items: center;
   }
-
+ 
+  .prev,
+  .next {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+  }
   .row{
     display: flex;
     width: 100%;
@@ -101,6 +118,11 @@ padding-top:2rem;
         text-align: center;
     
     padding-top:2rem;
+      }
+      .slick-arrow {
+        display: flex !important; /* Use !important to override any existing styles */
+        background:red;
+        z-index: 999;
       }
       .sliderContainer {
 

@@ -74,19 +74,20 @@ useEffect(()=>{
               בוחן כושר אשר יחלק אתכם לצוותים
                 {/* <FontAwesomeIcon icon={faCheck} className={styles.checkIcon} /> */}
               </div>
-    
+           
               <div className={styles.sentence} id="ימין">
               אקטים אחד לאחד כמו ביום סיירות
                 {/* <FontAwesomeIcon icon={faCheck} className={styles.checkIcon} /> */}
               </div>
               <div className={styles.sentence} id="ימין">
+              סיכום מקיף עם המגבשים הכולל טיפים ודגשים קריטיים להמשך
+             
+              </div>
+              <div className={styles.sentence} id="ימין">
               כל משתתף מקבל אצלנו לאחר הסימולציה משוב ביצועים פרטני על הביצועים שלו באקטים
                 {/* <FontAwesomeIcon icon={faCheck} className={styles.checkIcon} /> */}
               </div>
-              {/* <div className={styles.sentence} id="ימין">
-              בחלק של התיאור של הסימולציות
-             
-              </div> */}
+          
     
     </div>
 

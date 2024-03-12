@@ -4,7 +4,7 @@ import { Link as ScrollLink } from "react-scroll"
 import logo from "../images/לוגו.png"
 const Button=(props)=>{
   const message = props.msg || null;
-
+ 
   const phoneNumber = "+972527960293";
   const encodedMessage = encodeURIComponent(message);
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;

@@ -13,6 +13,8 @@ import ByMe from './components/ByMe/ByMe';
 import VerticalLinearStepper from './components/steps/Steps';
 import StepsScreen from './components/steps/StepsScreen';
 import SocialIcons from './components/social/Social';
+import BasicAccordionNew from './components/expanded box/AccordionBox';
+
 
 function App() {
   return <>
@@ -20,7 +22,7 @@ function App() {
  <FirstScreen/>
   <ThirdScreen/>
   <ForthScreen/>
-  
+
 <TrainerCard/>
   {/* <CustomImageList/> */}
  
@@ -29,6 +31,7 @@ function App() {
 
   <SecondScreen/>
 <BasicAccordion/>
+
 <SocialIcons/>
   <ByMe/>
   </div>

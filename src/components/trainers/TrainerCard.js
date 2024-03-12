@@ -3,6 +3,7 @@ import styles from "./TrainerCard.module.css"
 import trainer1 from "../../images/grid2.png"
 import trainer2 from "../../images/grid3.png"
 import trainer3 from "../../images/מאמן שלישי.png"
+import trainer4 from "../../images/מתן עמוס.png"
 import { useEffect } from "react"
 import ScrollReveal from "scrollreveal"
 import Slider from "react-slick"
@@ -38,8 +39,10 @@ const TrainerCard=()=>{
 
   <ActionAreaCard src={trainer1} name="מורן נמייש" description=" יוצא יחידת מגלן, מאמן מנטלי וטריאתלון" background="white"/>
     <ActionAreaCard src={trainer2} name="רפאל זרביב" description="יוצא יחידת מגלן, מאמן צוות ירושלים"  background="white"/>
+   
     <ActionAreaCard src={trainer3} name=" שלום ריבן" description="מאמן צוות אריאל
 יוצא יחידת מגלן, למד בוינגייט במהלך השירות"  background="white"/>
+ <ActionAreaCard src={trainer4} name="מתן עמוס" description="מתן עמוס, יוצא סיירת חרוב מתאמן ומתחרה בקרוספיט"  background="white"/>
   </Slider></div>
   
     </div>

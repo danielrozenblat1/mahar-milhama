@@ -5,6 +5,12 @@
     width:100%;
     margin:2% auto;
 }
+.slick-arrow.slick-next {
+  display: flex !important; /* Use !important to override any existing styles */
+}
+.slick-arrow.slick-prev {
+  display: flex !important; /* Use !important to override any existing styles */
+}
 .title {
     font-family: "Horev";
     font-size: 8rem;

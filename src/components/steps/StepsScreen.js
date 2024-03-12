@@ -3,7 +3,7 @@ import VerticalLinearStepper from "./Steps"
 import styles from "./StepsScreen.module.css"
 const StepsScreen=(props)=>{
 
-console.log(props.pressed)
+
 
 return <>
     {/* <div className={styles.title}>{props.title}</div> */}
