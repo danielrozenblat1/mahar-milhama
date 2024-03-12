@@ -293,7 +293,7 @@ const handleClick=(e)=>{
   
       slidesToShow: 1, // Adjust this value to control the number of visible slides
       centerMode: true, // Enable center mode
-      centerPadding: '20%', // Adjust the padding to control the amount of the next and previous slides visible
+      centerPadding: '22%', // Adjust the padding to control the amount of the next and previous slides visible
       responsive: [
         {
           breakpoint: 760,
@@ -416,11 +416,11 @@ return <>
       <div className={styles.label}>שלב שני</div>
       <div className={styles.description}>מעבר גיבוש מטכל</div>
       
-      <div className={styles.label}>דרך שלישית</div>
+      <div className={styles.label}>שלב שלישי</div>
       <div className={styles.description}>פסיכולוג וסיווג בטחוני</div>
       </>}/>
        <DropdownAccordion title={<>   <BoxPlus id="שלדג" image={shaldag} description="רק 1-1.5% מבין המועמדים עוברים את המיונים לשלדג בהצלחה"/></>}  content={<><div className={styles.label}>תנאים</div>
-      <div className={styles.description}>פרופיל - 97 , דפר - 50</div>
+      <div className={styles.description}>פרופיל - 82 , דפר - 50</div>
 
       <div className={styles.label}>שלב ראשון</div>
       <div className={styles.description}>מעבר יום סיירות בתוצאת גיבוש מטכל</div>
@@ -428,7 +428,7 @@ return <>
       <div className={styles.label}>שלב שני</div>
       <div className={styles.description}>מעבר גיבוש מטכל בתוצאת שלדג</div>
       
-      <div className={styles.label}>דרך שלישית</div>
+      <div className={styles.label}>שלב שלישי</div>
       <div className={styles.description}>פסיכולוג וסיווג בטחוני</div>
 
       </>} />

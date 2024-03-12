@@ -37,12 +37,12 @@ const TrainerCard=()=>{
     <div className={styles.sliderContainer}>
   <Slider {...sliderSettings} style={{zIndex:0}}>
 
-  <ActionAreaCard src={trainer1} name="מורן נמייש" description=" יוצא יחידת מגלן, מאמן מנטלי וטריאתלון" background="white"/>
-    <ActionAreaCard src={trainer2} name="רפאל זרביב" description="יוצא יחידת מגלן, מאמן צוות ירושלים"  background="white"/>
+  <ActionAreaCard src={trainer1} name="מורן נמייש" description="  מאמן צוות חיפה , יוצא יחידת מגלן, מאמן מנטלי וטריאתלון" background="white"/>
+    <ActionAreaCard src={trainer2} name="רפאל זרביב" description="מאמן צוות ירושליים ,יוצא יחידת מגלן, מאמן צוות ירושלים"  background="white"/>
    
     <ActionAreaCard src={trainer3} name=" שלום ריבן" description="מאמן צוות אריאל
 יוצא יחידת מגלן, למד בוינגייט במהלך השירות"  background="white"/>
- <ActionAreaCard src={trainer4} name="מתן עמוס" description="מתן עמוס, יוצא סיירת חרוב מתאמן ומתחרה בקרוספיט"  background="white"/>
+ <ActionAreaCard src={trainer4} name="מתן עמוס" description="מאמן צוות באר שבע , יוצא סיירת חרוב מתאמן ומתחרה בקרוספיט"  background="white"/>
   </Slider></div>
   
     </div>
