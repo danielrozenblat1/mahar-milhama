@@ -50,7 +50,7 @@ return <>
 <Group city="ירושלים" day1="שני" hour1="19:00" day2="רביעי" hour2="20:30"/>
 <Group city="באר שבע" day1="ראשון" hour1="19:00" day2="רביעי" hour2="20:30"/>
 </div>
-<div className={styles.center}><Button msg="אני מעוניין לקבל פרטים נוספים על הצוותי כושר קרבי שלכם ⚜️"/></div>
+<div className={styles.center}><Button msg="אני מעוניין לקבל פרטים נוספים על הצוותי כושר קרבי שלכם "/></div>
 </div>
 
 </>
