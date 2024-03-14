@@ -471,7 +471,7 @@ return <>
       </Slider>
       <div className={styles.fear}>אם אתה חולם להגיע <div className={styles.bold}>ליחידה מובחרת בצבא </div>ולעשות שירות משמעותי אתה לא יכול לשבת בחיבוק ידיים ו<div className={styles.bold}>לקוות לעבור את הגיבוש</div></div>
       <div className={styles.go}>לעשות את הצעד הראשון</div>
-      <Button2 text="איך אני מגדיל את הסיכויים ?" msg="היי שחריה , אפשר לדעת עוד על " />
+      <Button2 text="איך אני מגדיל את הסיכויים ?" msg="אני מעוניין לקבל פרטים נוספים על ההכנה שלכם ⚜️" />
     </div>
 </>
 

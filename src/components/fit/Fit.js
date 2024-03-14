@@ -92,7 +92,7 @@ useEffect(()=>{
     </div>
 
     </div>
-   <Button2 text="לעוד פרטים על הסימולציות" msg="היי שחריה , אשמח לדעת עוד על הסימולציות"/>
+   <Button2 text="לעוד פרטים על הסימולציות" msg="אני מעוניין לקבל פרטים נוספים על הסימולציות שלכם🥷🏽"/>
     
     </>
 }

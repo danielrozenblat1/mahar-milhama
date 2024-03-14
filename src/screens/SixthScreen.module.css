@@ -85,7 +85,7 @@ width:100%;
       .image{
         width:55%;
         object-fit: contain;
-      
+          margin:2% auto;
       }
       .bold{
         display: inline;
