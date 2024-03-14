@@ -83,7 +83,7 @@ width:100%;
     
       }
       .image{
-        width:65%;
+        width:55%;
         object-fit: contain;
       
       }
@@ -116,7 +116,7 @@ width:100%;
     
       }
       .image{
-        width:55%;
+        width:45%;
         object-fit: contain;
       
       }
@@ -145,11 +145,9 @@ width:100%;
       direction:rtl;
         color: #000000;
         text-align: center;
-    
-    
       }
       .image{
-        width:45%;
+        width:40%;
         object-fit: contain;
       
       }

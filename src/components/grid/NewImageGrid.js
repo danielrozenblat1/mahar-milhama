@@ -13,13 +13,19 @@ import grid13 from "../../images/מחר מלחמה שחריה לופט סימו�
  import grid14 from "../../images/מחר מלחמה שחריה לופט סימולציה 10.png"
  import grid12 from "../../images/מחר מלחמה שחריה לופט סימולציה 11.png"
  import grid15 from "../../images/grid15.png"
-import { useEffect } from "react"
+import { useEffect, useState } from "react"
 import ScrollReveal from "scrollreveal"
 const NewImagesGrid=()=>{
 
+const [zoom,setZoom]=useState(false)
+
+
+
+
+
     useEffect(()=>{
         ScrollReveal().reveal(`.${styles.image1}`, {
-            duration: 800,
+            duration: 600,
             distance: "60px",
             origin: "top",
             easing: "ease-out",
@@ -30,7 +36,7 @@ const NewImagesGrid=()=>{
             scale: 1,
           });
           ScrollReveal().reveal(`.${styles.image2}`, {
-            duration:1000,
+            duration:600,
             distance: "60px",
             origin: "top",
             easing: "ease-out",
@@ -41,7 +47,7 @@ const NewImagesGrid=()=>{
             scale: 1,
           });
           ScrollReveal().reveal(`.${styles.image3}`, {
-            duration:1200,
+            duration:600,
             distance: "60px",
             origin: "top",
             easing: "ease-out",
@@ -55,23 +61,22 @@ const NewImagesGrid=()=>{
     return <>
 
     <div className={styles.container}>
-        <div className={styles.row2}>
-
-    <img className={styles.image3}  alt="מחר מלחמה שחריה לופט"src={grid7}/>
-    <img className={styles.image1}  alt="מחר מלחמה שחריה לופט"src={grid4}/>
-    <img className={styles.image3}  alt="מחר מלחמה שחריה לופט"src={grid1}/>
-    <img className={styles.image3}  alt="מחר מלחמה שחריה לופט"src={grid2}/>
-    <img className={styles.image3}  alt="מחר מלחמה שחריה לופט"src={grid3}/>
-    <img className={styles.image1}  alt="מחר מלחמה שחריה לופט"src={grid14}/>
- 
+    <div className={styles.row2}>
+    <img className={styles.image3}  alt="מחר מלחמה שחריה לופט"src={grid7} />
+    <img className={styles.image1}  alt="מחר מלחמה שחריה לופט"src={grid4} />
+    <img className={styles.image3}  alt="מחר מלחמה שחריה לופט"src={grid1} />
+    <img className={styles.image3}  alt="מחר מלחמה שחריה לופט"src={grid2} />
+    <img className={styles.image3}  alt="מחר מלחמה שחריה לופט"src={grid3} />
+    <img className={styles.image1}  alt="מחר מלחמה שחריה לופט"src={grid14} />
     </div>
-    <div className={styles.row1}>
-    <img className={styles.image1}  alt="מחר מלחמה שחריה לופט"src={grid10}/>
-    <img className={styles.image1}  alt="מחר מלחמה שחריה לופט"src={grid13}/>
-    <img className={styles.image3}  alt="מחר מלחמה שחריה לופט"src={grid8}/>
-    <img className={styles.image3}  alt="מחר מלחמה שחריה לופט"src={grid6}/>
-    <img className={styles.image1}  alt="מחר מלחמה שחריה לופט"src={grid12}/>
-    <img className={styles.image1}  alt="מחר מלחמה שחריה לופט"src={grid5}/>
+
+    <div className={styles.row2}>
+    <img className={styles.image3}  alt="מחר מלחמה שחריה לופט"src={grid10} />
+    <img className={styles.image1}  alt="מחר מלחמה שחריה לופט"src={grid13} />
+    <img className={styles.image3}  alt="מחר מלחמה שחריה לופט"src={grid8} />
+    <img className={styles.image3}  alt="מחר מלחמה שחריה לופט"src={grid6} />
+    <img className={styles.image3}  alt="מחר מלחמה שחריה לופט"src={grid12} />
+    <img className={styles.image1}  alt="מחר מלחמה שחריה לופט"src={grid5} />
     </div>
     {/* <div className={styles.row}>
     <img className={styles.image3}  alt="מחר מלחמה שחריה לופט"src={image6}/>

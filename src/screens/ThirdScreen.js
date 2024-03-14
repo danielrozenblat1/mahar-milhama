@@ -345,7 +345,7 @@ return <>
      {/* <StepsScreen   pressed={pressed} title={title} steps={chosen} onClick={handleClick} /> */}
       <Slider {...sliderSettings} style={{zIndex:1}}>
       <DropdownAccordion title={<>
-        <BoxPlus id="669"  image={sixSixNine} description="רק 0.5-1% מבין המועמדים עוברים את המיונים ל669 בהצלחה" />
+        <BoxPlus id="669"  image={sixSixNine} description="רק 0.5-1% מבין המועמדים עוברים את המיונים ליחידת 669 בהצלחה" />
       </>} content={ <>
       <div className={styles.label}>תנאים</div>
       <div className={styles.description}>פרופיל - 97 , דפר - 50</div>
@@ -432,7 +432,7 @@ return <>
       <div className={styles.description}>פסיכולוג וסיווג בטחוני</div>
 
       </>} />
-       <DropdownAccordion title={<>   <BoxPlus id="אגוז" image={egoz} description="רק 2-3% מבין המועמדים עוברים את המיונים לאגוז בהצלחה" /></>} content={ <>
+       <DropdownAccordion title={<>   <BoxPlus id="אגוז" image={egoz} description="רק 2-3% מבין המועמדים עוברים את המיונים ליחידת אגוז בהצלחה" /></>} content={ <>
       <div className={styles.label}>תנאים</div>
       <div className={styles.description}>פרופיל - 82, דפר - 50</div>
 
