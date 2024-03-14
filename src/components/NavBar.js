@@ -6,7 +6,7 @@ import logo from "../images/לוגו עיגול.png"
 import Button2 from './Button2';
 const StickyNavbar = () => {
   return <>
-       {window.innerWidth < 850 && <div className={styles.smallNav}><Button2 text="לעוד פרטים" msg="היי שחריה אני אשמח לדעת עוד על"/>
+       {window.innerWidth < 850 && <div className={styles.smallNav}><Button2 text="לעוד פרטים" msg="אני מעוניין לקבל פרטים נוספים על ההכנה שלכם \u269C\ufe0f"/>
        {window.innerWidth >= 550 && window.innerWidth<=850 && <img className={styles.logo} src={logo} alt="מחר מלחמה"/> }</div>}       
        {window.innerWidth > 850 &&  <div className={styles.stickyNavbar}>
        <div className={styles.navLogo}><Button msg="אני מעוניין לקבל פרטים נוספים על ההכנה שלכם \u269C\ufe0f"/></div>
