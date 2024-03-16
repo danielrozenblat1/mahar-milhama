@@ -70,12 +70,49 @@
       }
 
   }
-  @media only screen and (min-width: 350px)  and (max-width:450px)  {
+  @media only screen and (min-width: 350px)  and (max-width:410px)  {
 
     .background {
   
-   height:90dvh;
-     background-image: url("../images/backgroundPhone1.png");
+      height:110dvh;
+     background-image: url("../images/backgroundPhone.png");
+      background-size: cover;
+      background-position: center top;
+      background-repeat: no-repeat;
+      overflow-x: hidden;
+      }
+      
+      .title {
+        font-family: "Horev";
+        font-size: 6.5rem;
+      direction:rtl;
+        color: #000000;
+        text-align: center;
+        padding-top: 5.3rem;
+      }
+      .bold{
+        display: inline;
+        color: #9f0000;
+      }
+      .icon{
+        width:35%;
+        margin:0 auto;
+      }
+      
+      .subTitle {
+        font-family: "Horev";
+        font-size: 3rem;
+        color: #000000;
+        text-align: center;
+        margin-top:10px
+      }
+  }
+  @media only screen and (min-width: 410px)  and (max-width:450px)  {
+
+    .background {
+  
+
+     background-image: url("../images/backgroundbiggerPhones.png");
       background-size: cover;
       background-position: center top;
       background-repeat: no-repeat;
