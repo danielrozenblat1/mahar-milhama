@@ -144,6 +144,47 @@
         margin-top:10px
       }
   }
+  @media only screen and (min-width: 385px)  and (max-width:450px) and (orientation: portrait)
+  and (min-height: 800px)
+  and (max-height: 1000px) {
+
+    .background {
+  
+height:80vh;
+      background-image: url("../images/backgroundPhone.png");
+       background-size: cover;
+       background-position: center top;
+       background-repeat: no-repeat;
+       overflow-x: hidden;
+       }
+       
+       .title {
+         font-family: "Horev";
+         font-size: 6.5rem;
+       direction:rtl;
+         color: #000000;
+         text-align: center;
+         padding-top: 6.3rem;
+       }
+       .bold{
+         display: inline;
+         color: #9f0000;
+       }
+       .icon{
+         width:40%;
+         margin:0 auto;
+       }
+       
+       .subTitle {
+         font-family: "Horev";
+         font-size: 3.5rem;
+         color: #000000;
+         text-align: center;
+         margin-top:10px
+       }
+
+
+  }
   @media only screen and (min-width: 450px)  and (max-width:550px)  {
 
     .background {
@@ -255,6 +296,47 @@
         margin-top:10px
       }
   }
+  @media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px)
+  and (orientation: portrait)
+  and (min-height: 1000px)
+  and (max-height: 1200px) {
+    .background {
+  
+      height:90vh;
+       background-image: url("../images/backgroundbiggerPhones.png");
+       background-size: cover;
+       background-position: center top;
+       background-repeat: no-repeat;
+       overflow-x: hidden;
+       }
+       
+       .title {
+         font-family: "Horev";
+         font-size: 6.5rem;
+         direction:rtl;
+         color: #000000;
+         text-align: center;
+         padding-top: 7.2rem;
+       }
+       .bold{
+         display: inline;
+         color: #9f0000;
+       }
+       .icon{
+         width:30%;
+         margin:0 auto;
+       }
+       
+       .subTitle {
+         font-family: "Horev";
+         font-size: 4rem;
+         color: #000000;
+         text-align: center;
+         margin-top:10px
+       }
+}
   @media only screen and (min-width: 850px)  and (max-width:1050px)  {
 
     .background {
