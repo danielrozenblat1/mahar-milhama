@@ -45,7 +45,7 @@ const FirstScreen = () => {
       <>
       
   
-        <div >
+        <div itemScope itemType="https://schema.org/WebPage" >
           {/* Display the loading component while the image is loading */}
           {isLoading && <TargetLoader />}
   
@@ -58,7 +58,7 @@ const FirstScreen = () => {
                 className={styles.background} // Add a class for content styling
               >
                 {/* Rest of your content */}
-                <div className={styles.title}>
+                <div className={styles.title} itemProp="name">
                   מחר <div className={styles.bold}>מלחמה</div>
                 </div>
                 {/* ... your other content here ... */}
@@ -67,7 +67,7 @@ const FirstScreen = () => {
                <Player ref={playerRef1} size="100%" onComplete={handleComplete} icon={snipe} />
                   </div> 
                
-                <h2 className={styles.subTitle}>
+                <h2 className={styles.subTitle} itemProp="description">
                   הכנה מקצועית לצבא
                 </h2>
               </div>

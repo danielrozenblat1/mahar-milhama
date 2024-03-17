@@ -345,7 +345,7 @@ return <>
      {/* <StepsScreen   pressed={pressed} title={title} steps={chosen} onClick={handleClick} /> */}
       <Slider {...sliderSettings} style={{zIndex:1}}>
       <DropdownAccordion title={<>
-        <BoxPlus id="669"  image={sixSixNine} description="רק 0.5-1% מבין המועמדים עוברים את המיונים ליחידת 669 בהצלחה" />
+        <BoxPlus id="669"  image={sixSixNine}  itemprop="itemListElement" itemtype="https://schema.org/Product" description="רק 0.5-1% מבין המועמדים עוברים את המיונים ליחידת 669 בהצלחה" />
       </>} content={ <>
       <div className={styles.label}>תנאים</div>
       <div className={styles.description}>פרופיל - 97 , דפר - 50</div>
@@ -363,7 +363,7 @@ return <>
       <div className={styles.description}>פסיכולוג וסיווג בטחוני</div>
       </>} />
         {/* <Box id="669" image={sixSixNine} description="רק 1-1.5% מבין המועמדים עוברים את המיונים ל669 בהצלחה" onClick={handleClick} /> */}
-        <DropdownAccordion title={<> <BoxPlus id="דובדבן" image={duvdevan} description="רק 2-3% מבין המועמדים עוברים את המיונים לדובדבן בהצלחה"/> </>} content={ <>
+        <DropdownAccordion title={<> <BoxPlus id="דובדבן"  itemprop="itemListElement" itemtype="https://schema.org/Product" image={duvdevan} description="רק 2-3% מבין המועמדים עוברים את המיונים לדובדבן בהצלחה"/> </>} content={ <>
       <div className={styles.label}>תנאים</div>
       <div className={styles.description}>פרופיל - 82, דפר - 50</div>
 
@@ -383,7 +383,7 @@ return <>
       </>}/>
 
       
-        <DropdownAccordion title={<> <BoxPlus id="מגלן" image={maglan} description="רק 2-3% מבין המועמדים עוברים את המיונים ליחידת מגלן בהצלחה"/></>} content={ <>
+        <DropdownAccordion title={<> <BoxPlus id="מגלן"  itemprop="itemListElement" itemtype="https://schema.org/Product" image={maglan} description="רק 2-3% מבין המועמדים עוברים את המיונים ליחידת מגלן בהצלחה"/></>} content={ <>
       <div className={styles.label}>תנאים</div>
       <div className={styles.description}>פרופיל - 82, דפר - 50</div>
 
@@ -406,7 +406,7 @@ return <>
 
 
 
-        <DropdownAccordion title={<> <BoxPlus id="סיירת מטכל" image={matcal} description="רק 0.5-1% מבין המועמדים עוברים את המיונים לסיירת מטכל בהצלחה"/></>} content={ <>
+        <DropdownAccordion title={<> <BoxPlus id="סיירת מטכל"   itemprop="itemListElement" itemtype="https://schema.org/Product" image={matcal} description="רק 0.5-1% מבין המועמדים עוברים את המיונים לסיירת מטכל בהצלחה"/></>} content={ <>
       <div className={styles.label}>תנאים</div>
       <div className={styles.description}>פרופיל - 97 , דפר - 50</div>
 
@@ -419,7 +419,7 @@ return <>
       <div className={styles.label}>שלב שלישי</div>
       <div className={styles.description}>פסיכולוג וסיווג בטחוני</div>
       </>}/>
-       <DropdownAccordion title={<>   <BoxPlus id="שלדג" image={shaldag} description="רק 1-1.5% מבין המועמדים עוברים את המיונים לשלדג בהצלחה"/></>}  content={<><div className={styles.label}>תנאים</div>
+       <DropdownAccordion title={<>   <BoxPlus id="שלדג"  itemprop="itemListElement" itemtype="https://schema.org/Product" image={shaldag} description="רק 1-1.5% מבין המועמדים עוברים את המיונים לשלדג בהצלחה"/></>}  content={<><div className={styles.label}>תנאים</div>
       <div className={styles.description}>פרופיל - 82 , דפר - 50</div>
 
       <div className={styles.label}>שלב ראשון</div>
@@ -432,7 +432,7 @@ return <>
       <div className={styles.description}>פסיכולוג וסיווג בטחוני</div>
 
       </>} />
-       <DropdownAccordion title={<>   <BoxPlus id="אגוז" image={egoz} description="רק 2-3% מבין המועמדים עוברים את המיונים ליחידת אגוז בהצלחה" /></>} content={ <>
+       <DropdownAccordion title={<>   <BoxPlus id="אגוז"  itemprop="itemListElement" itemtype="https://schema.org/Product" image={egoz} description="רק 2-3% מבין המועמדים עוברים את המיונים ליחידת אגוז בהצלחה" /></>} content={ <>
       <div className={styles.label}>תנאים</div>
       <div className={styles.description}>פרופיל - 82, דפר - 50</div>
 
@@ -448,7 +448,7 @@ return <>
       <div className={styles.label}>דרך שלישית</div>
       <div className={styles.description}>נפילה ממסלול של יחידת עילית</div>
       </>} />
-       <DropdownAccordion title={<><BoxPlus id="שייטת 13" image={shayetet} description="רק 0.5-1% מבין המועמדים עוברים את המיונים לשייטת 13 בהצלחה"/></>}   content={ <>
+       <DropdownAccordion title={<><BoxPlus id="שייטת 13"   itemprop="itemListElement" itemtype="https://schema.org/Product" image={shayetet} description="רק 0.5-1% מבין המועמדים עוברים את המיונים לשייטת 13 בהצלחה"/></>}   content={ <>
       <div className={styles.label}>תנאים</div>
       <div className={styles.description}>פרופיל - 97 , דפר - 50</div>
 

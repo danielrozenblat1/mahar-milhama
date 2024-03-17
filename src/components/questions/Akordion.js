@@ -36,7 +36,9 @@ function DropdownAccordion({ title, content }) {
             background: "inherit",
             zIndex: -1,
           },
+          
         }}
+        itemType="https://schema.org/FAQPage"
       >
         <AccordionSummary
           expandIcon={!expanded ? <AddIcon/> : <RemoveIcon/>}
@@ -74,6 +76,7 @@ function DropdownAccordion({ title, content }) {
             textAlign:"center",
             borderTop: '1px solid #9f0000', // Add top border
           }}
+          itemProp="question"
         >
           <Typography sx={{ fontFamily: 'HeeboR'}}>{content}</Typography>
         </AccordionDetails>

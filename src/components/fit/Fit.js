@@ -33,27 +33,27 @@ useEffect(()=>{
 
     return <>
  
-    <div className={styles.row}>
+    <div className={styles.row} itemScope itemType="https://schema.org/Product">
     
     
     <div className={styles.left}>
-    <div className={styles.side} id="שמאל">גיבושים</div>
+    <div className={styles.side} id="שמאל" itemProp="name" >גיבושים</div>
     
-    <div className={styles.sentence} id="שמאל">
+    <div className={styles.sentence} id="שמאל" itemProp="description">
     24 שעות בהובלת מגבשים של יחידות העילית שכוללות
 
                 {/* <FontAwesomeIcon icon={faTimes} className={styles.timesIcon} /> */}
               </div>
-    <div className={styles.sentence} id="שמאל">
+    <div className={styles.sentence} id="שמאל" itemProp="description">
     אקטים מהגיבוש, מסעות, הקפצות, משימות חשיבה ודינמיקה קבוצתית שיקחו אתכם לקצה הפיזי והמנטלי ויגרמו לגיבוש להראות הרבה יותר פשוט לאחר מכן
                 {/* <FontAwesomeIcon icon={faTimes} className={styles.timesIcon} /> */}
               </div>
     
-              <div className={styles.sentence} id="שמאל">
+              <div className={styles.sentence} id="שמאל" itemProp="description">
               סיכום אישי אחד על אחד עם המגבשים ומשוב אישי פרטני + תרגול ראיון אישי
                 {/* <FontAwesomeIcon icon={faTimes} className={styles.timesIcon} /> */}
               </div>
-              <div className={styles.sentence} id="שמאל">
+              <div className={styles.sentence} id="שמאל" itemProp="description">
               סיכום קבוצתי עם המגבשים הכולל דגשים לשיפור ושימור והסבר על מה בדיוק אותן יחידות מחפשות בגיבוש
                 {/* <FontAwesomeIcon icon={faTimes} className={styles.timesIcon} /> */}
               </div>
@@ -62,28 +62,28 @@ useEffect(()=>{
     
     
     <div className={styles.right}>
-    <div className={styles.side} id="ימין">סימולציות ליום סיירות </div>
+    <div className={styles.side} id="ימין" itemProp="name">סימולציות ליום סיירות </div>
     
     
-    <div className={styles.sentence} id="ימין">
+    <div className={styles.sentence} id="ימין" itemProp="description">
     4 שעות בהובלת מגבשים יוצאי יחידות מובחרות הכוללות
                 {/* <FontAwesomeIcon icon={faCheck} className={styles.checkIcon} /> */}
               </div>
     
-              <div className={styles.sentence} id="ימין">
+              <div className={styles.sentence} id="ימין" itemProp="description">
               בוחן כושר אשר יחלק אתכם לצוותים
                 {/* <FontAwesomeIcon icon={faCheck} className={styles.checkIcon} /> */}
               </div>
            
-              <div className={styles.sentence} id="ימין">
+              <div className={styles.sentence} id="ימין" itemProp="description">
               אקטים אחד לאחד כמו ביום סיירות
                 {/* <FontAwesomeIcon icon={faCheck} className={styles.checkIcon} /> */}
               </div>
-              <div className={styles.sentence} id="ימין">
+              <div className={styles.sentence} id="ימין" itemProp="description">
               סיכום מקיף עם המגבשים הכולל טיפים ודגשים קריטיים להמשך
              
               </div>
-              <div className={styles.sentence} id="ימין">
+              <div className={styles.sentence} id="ימין" itemProp="description">
               כל משתתף מקבל אצלנו לאחר הסימולציה משוב ביצועים פרטני על הביצועים שלו באקטים
                 {/* <FontAwesomeIcon icon={faCheck} className={styles.checkIcon} /> */}
               </div>
