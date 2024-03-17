@@ -74,7 +74,7 @@
 
     .background {
   
-      height:110vh;
+      height:105vh;
      background-image: url("../images/backgroundPhone.png");
       background-size: cover;
       background-position: center top;
@@ -95,7 +95,7 @@
         color: #9f0000;
       }
       .icon{
-        width:35%;
+        width:40%;
         margin:0 auto;
       }
       
@@ -104,7 +104,7 @@
         font-size: 3rem;
         color: #000000;
         text-align: center;
-        margin-top:10px
+        margin-top:20px
       }
   }
   @media only screen and (min-width: 410px)  and (max-width:450px)  {
