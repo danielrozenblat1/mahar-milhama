@@ -158,7 +158,7 @@ return <>
       </div>
     ))}
   </Slider></div>
-  <div className={styles.title}><div className={styles.bold}>כל</div> המתאמנים שלנו</div>
+  <div className={styles.title}><div className={styles.bold}>כל </div> המתאמנים שלנו</div>
   <div className={styles.subTitle}>נמצאים בפורום הארצי של עילית/קומנדו/סיירות,  שבה הם  <br/> <ul className={styles.ul}><li>מקבלים תשובה לכל שאלה שלהם</li> <br/><li>נמצאים בסביבה מנצחת ומעודדת להצלחה</li> <br/> <li>רוכשים את המידע הכי עדכני על ימי הגיבוש הרלוונטים עבורם</li></ul></div>
   <div className={styles.subTitle}>והכניסה אליה היא לגמרי <div className={styles.bold}>בחינם</div></div>
   <Button2 text="לפורום הארצי של עילית/קומנדו/סיירות" href={true}/>
